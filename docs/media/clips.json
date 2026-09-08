@@ -1,0 +1,72 @@
+{
+  "original_file": "/mnt2/zhexi/deskclean-real2sim/agent/out/process/workflow-live.mkv",
+  "original_sha256": "838eb13af1dbc37d7af8313832956e283c3c26d2dd40f5167e44b974c7af4853",
+  "recorded_frame_rate": 3,
+  "edited_frame_rate": 24,
+  "clips": [
+    {
+      "name": "workflow",
+      "input_start_s": 0.0,
+      "input_end_s": 1280.0,
+      "speed_multiplier": 60.0,
+      "nominal_output_start_s": 0.0,
+      "nominal_output_end_s": 21.333333333333332,
+      "title": "GUI setup and scene previews | 60x elapsed time",
+      "output_start_s": 0.0,
+      "output_end_s": 21.333333333333332,
+      "output_frames": 512
+    },
+    {
+      "name": "global",
+      "input_start_s": 2774.5,
+      "input_end_s": 2782.5,
+      "speed_multiplier": 1.0,
+      "nominal_output_start_s": 21.333333333333332,
+      "nominal_output_end_s": 29.333333333333332,
+      "title": "Global view | Actual GUI playback | 1x",
+      "output_start_s": 21.333333333333332,
+      "output_end_s": 29.333333333333332,
+      "output_frames": 192
+    },
+    {
+      "name": "ego",
+      "input_start_s": 2864.25,
+      "input_end_s": 2872.75,
+      "speed_multiplier": 1.0,
+      "nominal_output_start_s": 29.333333333333332,
+      "nominal_output_end_s": 37.83333333333333,
+      "title": "Ego view | Actual GUI playback | 1x",
+      "output_start_s": 29.333333333333332,
+      "output_end_s": 38.0,
+      "output_frames": 208
+    },
+    {
+      "name": "gripper",
+      "input_start_s": 2913.0,
+      "input_end_s": 2921.0,
+      "speed_multiplier": 1.0,
+      "nominal_output_start_s": 37.83333333333333,
+      "nominal_output_end_s": 45.83333333333333,
+      "title": "Gripper view | Actual GUI playback | 1x",
+      "output_start_s": 38.0,
+      "output_end_s": 46.0,
+      "output_frames": 192
+    },
+    {
+      "name": "render",
+      "input_start_s": 3748.0,
+      "input_end_s": 3754.0,
+      "speed_multiplier": 1.0,
+      "nominal_output_start_s": 45.83333333333333,
+      "nominal_output_end_s": 51.83333333333333,
+      "title": "Final render review | Actual Blender GUI",
+      "output_start_s": 46.0,
+      "output_end_s": 52.0,
+      "output_frames": 144
+    }
+  ],
+  "nominal_duration_s": 51.83333333333333,
+  "notes": "Real Xvfb/Blender GUI capture. First segment is 60x and drops frames to 24 fps; real-time sections duplicate the original 3 fps frames to 24 fps. No interpolation, simulated mouse actions, or fabricated operations. Inactive intervals, the long first-run popup, and the later workspace-control error are omitted from this highlight edit and retained in the full recording and events.jsonl.",
+  "input_time_basis": "Seconds from the raw MKV presentation timeline, confirmed by extracted frames. Event recording-relative times are approximate wall-clock/encoder-progress estimates.",
+  "output_duration_s": 52.0
+}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The complete engineering walkthrough for Deskclean: video assumptions, contact geometry, TIAGo++ control, validation, Blender replay, and reproduction.">
+  <title>Engineering walkthrough · Deskclean</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="workflow.css">
+</head>
+<body>
+  <a class="skip-link" href="#walkthrough">Skip to the walkthrough</a>
+  <header class="site-header wrap"><a class="wordmark" href="./"><span class="brand-mark" aria-hidden="true">↗</span> DESKCLEAN</a><nav aria-label="Walkthrough navigation"><a href="./">Back to the demo</a><a href="downloads/workflow-en.md" download>Download guide ↗</a></nav></header>
+  <main id="walkthrough" class="workflow-article"><div class="eyebrow"><span class="status-dot"></span> ENGINEERING WALKTHROUGH / 01</div>
+<h1>From six seconds of video to a robot world you can run</h1>
+<p>A tabletop cleaning clip is a small task with a surprisingly useful engineering test inside it: can a robot hold the dustpan, sweep loose blocks into its open cavity, and leave a record that explains why the motion worked?</p>
+<p>Deskclean turns that observation into an executable MuJoCo scene around the commercial TIAGo++ robot model. The verified run collects <strong>6 of 6 blocks</strong>. Replaying the saved controls reproduces the recorded configuration trajectory with <strong>zero numerical difference</strong>. Disable only brush–block contact, while keeping the initial state and controls fixed, and collection falls to <strong>0 of 6</strong>.</p>
+<p>The video informs a scripted skill and an inverse-kinematics controller. Tool dimensions are estimated, the base is fixed, and the tools start held by the original parallel grippers. The project does not train a policy or recover calibrated geometry from the video. These choices define what the experiment demonstrates.</p>
+<h2>Run the complete pipeline</h2>
+<p>Extract <code>reproduce.zip</code> and run the following from the extracted project directory. Use Python 3.12, Blender 4.2.1, and an available NVIDIA CUDA device for rendering.</p>
+<pre><code class="language-bash">python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+export BLENDER=/absolute/path/to/blender
+export CUDA_VISIBLE_DEVICES=0
+bash scripts/reproduce.sh
+</code></pre>
+<p>The script resolves FFmpeg through the installed <code>imageio-ffmpeg</code> package. Each invocation creates a fresh <code>agent/out/reproductions/run-XXXXXXXX/</code> directory, copies the required project inputs there, and prints its absolute location. All new simulation, rendering, and log outputs stay inside that directory. The archived reference run remains intact.</p>
+<p>The sequence is simulation → independent audit → USD export → visual assets → Blender replay → scene checks → three video renders. Stage logs are in the new run&#39;s <code>agent/log/</code>; videos are in its <code>agent/out/videos/</code>. On a Mac, open the supplied self-contained <code>scene.blend</code> to inspect the recorded scene without repeating the CUDA render.</p>
+<h2>1. Read the task before rebuilding it</h2>
+<p>The source is a six-second, 1280 × 720, 24 fps first-person video. One hand positions the dustpan while the other sweeps colored blocks with a brush and then withdraws. Three blocks are clearly visible at the start; six are visible near the end. Occlusion makes the visible count an unreliable physical state record.</p>
+<p>The simulation therefore starts with six free bodies and preserves all six throughout the run. Nothing is spawned into the dustpan during execution.</p>
+<p>To inspect the original observations, use the following optional commands. These manual inspection commands require <code>ffmpeg</code> and <code>ffprobe</code> on <code>PATH</code>; the main reproduction script supplies its own FFmpeg path.</p>
+<pre><code class="language-bash">mkdir -p agent/out/source
+ffprobe -v quiet -show_format -show_streams inputs/deskclean.mp4
+ffmpeg -i inputs/deskclean.mp4 -vf &#39;fps=2,scale=480:-1,tile=4x3&#39; -frames:v 1 agent/out/source/contact-sheet.jpg
+</code></pre>
+<p>The modeled blocks are 22 mm wide, the dustpan opening is 280 mm wide, its cavity is 230 mm deep, and the tabletop is 730 mm high. These values are assumptions stored in <code>agent/out/scene_spec.json</code>, not measurements recovered from a calibrated camera.</p>
+<h2>2. Give appearance and contact a shared frame</h2>
+<p>The world uses meters with Z up. The robot faces +X, and its left side is +Y. The dustpan&#39;s local origin is at the opening center, with +Y pointing into its cavity. The brush&#39;s origin is at the bottom center of the bristles; its long axis is X and its sweep direction is +Y.</p>
+<p>A workspace translation of <code>[-0.06, -0.12, 0]</code> meters places the task within reach. The resolved geometry is saved separately in <code>resolved-scene-spec.json</code>, so the original observation assumptions remain available.</p>
+<p><code>src/create_assets.py</code> builds the Blender dustpan shell, handle, entry lip, brush head, and 624 visual bristle filaments. These visuals share their origins and dimensions with the physical tools. The bristles use a rigid collision proxy in MuJoCo; the individual filaments provide appearance.</p>
+<p>A single convex hull around a concave dustpan would close its opening. The physical model instead uses a thin bottom, an entry ramp, two sides, and a rear wall. The bottom&#39;s local y/z profile is <code>[[-0.015, -0.001], [0, 0.002], [0.23, 0.009]]</code>. The front edge tapers to zero thickness; the rest is 2 mm thick. Blender uses the same entry profile.</p>
+<p>See the <a href="https://mujoco.readthedocs.io/en/3.4.0/computation.html#collision-detection">MuJoCo collision documentation</a> for the collision representation used by the engine.</p>
+<h2>3. Keep the robot real</h2>
+<p>TIAGo++ is a commercial PAL Robotics platform. The model comes from Google DeepMind&#39;s MuJoCo Menagerie, pinned to revision <code>8161bba264d7fa7c99ca301e91e7fb44737676ad</code>. The required model files were checked against their Git blob hashes; the original Apache-2.0 license is preserved in the archive.</p>
+<p>The task model removes the base free joint to hold the wheeled base fixed. It retains the robot meshes, arm joints, original joint force limits, and actuator force limits. The tools are rigidly attached at the gripper wrists, with the original fingers held at the grasp opening. This experiment covers tool use from a pre-grasped state, rather than autonomous tool acquisition.</p>
+<p>Sources: <a href="https://pal-robotics.com/robot/tiago/">PAL Robotics TIAGo</a> and the <a href="https://github.com/google-deepmind/mujoco_menagerie/tree/8161bba264d7fa7c99ca301e91e7fb44737676ad/pal_tiago_dual">pinned Menagerie model and license</a>.</p>
+<h2>4. Separate planning from execution</h2>
+<p><code>src/robot_control.py</code> computes forward kinematics in an independent MuJoCo state and uses SciPy <code>least_squares</code> to solve tool poses. The scripted sequence positions the dustpan, advances the brush, withdraws it, and lifts the dustpan. Wrist orientation preserves clearance around the robot shells.</p>
+<p>The actual simulation uses a 0.002 s timestep. Its runtime sets actuator <code>ctrl</code> and advances through <code>mj_step</code>. Every block has a free joint. After initialization, the runtime does not overwrite block poses, move them with mocap, or apply scripted external forces. The saved controls are the commands actually sent to the engine.</p>
+<p>The state contract is <code>state[T+1]</code> and <code>ctrl[T]</code>: the initial state plus every post-step state, alongside one control vector per step. Contact records include the solved time, participating bodies, distance, position, and the six-dimensional contact force. For rendering, a separate forward computation refreshes geometry transforms at the saved configurations.</p>
+<h2>5. Test the result, then remove its cause</h2>
+<p>An early run appeared to collect all six blocks but let them sink roughly 6.1 mm into the thin dustpan bottom. Isolating the bottom and a single block reproduced the problem without the robot. The first failing contract was contact softness. Setting the task contact time constant to 0.006 s reduced penetration to about 0.35 mm in the isolated check and 0.668 mm over the complete final rollout.</p>
+<p>The final audit checks five properties:</p>
+<ol>
+<li>All eight corners of each of the six blocks lie inside the dustpan cavity, with a 1 mm tolerance at the bottom.</li>
+<li>Replaying the saved controls from the initial state reproduces every saved <code>qpos</code>, with maximum absolute error zero.</li>
+<li>Saved states, controls, and rendering frames follow the same indexing contract.</li>
+<li>The runtime advances through controls and physical integration.</li>
+<li>Joint and actuator force limits match the original robot model.</li>
+</ol>
+<p>The verified run collects six blocks. Maximum robot self-collision penetration is zero. The largest IK tool-origin position error is 0.232 mm. Accumulated normal impulse is 0.6191124 N·s for brush–block contact and 1.8636634 N·s for dustpan–block contact. The audit writes <code>success=true</code> only after its checks pass.</p>
+<p>The additional runs use fresh models and the same saved control sequence. With identical initial state and brush–block contact disabled, collection drops to 0/6. Two initial block-position perturbations within ±3 mm and a +20% change to block geometry friction each collect 6/6. These are three finite perturbation checks, not a general robustness evaluation. Their outputs are preserved separately in <code>agent/out/validation/</code>.</p>
+<p>An isolated reproduction smoke test also rebuilt the simulation from copied source and robot assets. Its <code>qpos</code>, <code>qvel</code>, and <code>ctrl</code> arrays matched the reference exactly, while hashes confirmed the five reference inputs remained unchanged.</p>
+<h2>6. Render the physics that actually happened</h2>
+<p>The official <code>mujoco.usd.exporter.USDExporter</code> exports the robot and blocks. The export explicitly sets 24 fps, meters, and Z up, and corrects the exporter&#39;s extra declared hidden end frame.</p>
+<p>Blender imports the USD and bakes rigid-body world transforms into keyframes. Active USD dependencies are removed. The detailed dustpan and brush follow the same saved body poses. The delivered <code>.blend</code> has no external USD or unpacked texture dependency; the checked tool-position transfer error is approximately <code>2.86e-8 m</code>.</p>
+<p>The three cameras are a fixed global view, an ego camera attached to the robot&#39;s head, and a local camera rigidly associated with the right gripper. The gripper camera is positioned to show contact ahead of the bristles without letting the brush head obscure the blocks.</p>
+<p>The physical motion lasts 7.2 s. Its 174 frames at 24 fps produce a 7.25 s video. The website compares source and simulation by their relative progress rather than asserting a frame-for-frame timing match. The interactive 3D viewer is a browser copy of this recorded scene and animation; the physics execution remains in MuJoCo.</p>
+<p>Sources: <a href="https://mujoco.readthedocs.io/en/3.4.0/python.html#usd-exporter">MuJoCo USD exporter</a> and <a href="https://docs.blender.org/api/4.2/">Blender 4.2 Python API</a>.</p>
+<h2>7. Preserve the real workspace</h2>
+<p>Modeling, simulation, and rendering run through scripts. The actual Blender GUI is used to load scenes, inspect cameras, and play the recorded motion. A continuous 3 fps Xvfb capture records those sessions; the website&#39;s highlight edit is cut and accelerated from that recording. Source code, command logs, the full recording, edit intervals, and GUI events preserve the surrounding process.</p>
+<p>The GUI control channel uses a main-thread timer to read an atomically replaced Python command file. One command completes before the next is submitted. During development, an unavailable screen context and an asynchronous workspace switch each stopped the timer with the original traceback intact. The recording continued through recovery. These were GUI inspection failures and did not change the physical rollout.</p>
+<p>To record another session, use Linux with Xvfb and FFmpeg installed. Choose an unused display number and start Xvfb in one terminal:</p>
+<pre><code class="language-bash">Xvfb :117 -screen 0 1280x720x24
+</code></pre>
+<p>Once the display is ready, start the recorder from a second terminal:</p>
+<pre><code class="language-bash">mkdir -p agent/out/process
+ffmpeg -f x11grab -framerate 3 -video_size 1280x720 -i :117.0 -c:v libx264 -threads 2 agent/out/process/workflow-live.mkv
+</code></pre>
+<p>With capture running, launch Blender from another terminal with <code>DISPLAY=:117</code>. The included <code>agent/scripts/blender_control.py</code> reads <code>DESKCLEAN_CONTROL_DIR</code>. Create that directory and an initial <code>command.py</code> containing <code>pass</code>. Submit each command by writing a temporary file and replacing <code>command.py</code> atomically. Wait for the matching command timestamp and <code>done</code> state in <code>status.json</code> before submitting another. Stop FFmpeg with SIGINT so it finishes the container.</p>
+<p>Final rendering used one A100 GPU and two workers sharing eight logical CPUs, at 1280 × 720 and 48 samples. The Mac was used for source inspection, editing, and lightweight preview. The original recording and replay remain separate artifacts.</p>
+<h2>What is in the package?</h2>
+<ul>
+<li><code>src/</code>: scene construction, control, USD export, and Blender preparation and rendering.</li>
+<li><code>scripts/reproduce.sh</code>: the complete pipeline in a fresh output directory.</li>
+<li><code>thirdparty/mujoco_menagerie/</code>: the pinned robot assets and original licenses.</li>
+<li><code>inputs/deskclean.mp4</code>: the original six-second observation.</li>
+<li><code>agent/out/simulation/</code>: MJCF, states, controls, contacts, resolved specification, and audited metrics.</li>
+<li><code>agent/out/usd/</code>: the official exported trajectory.</li>
+<li><code>agent/out/deskclean.blend</code>: the self-contained animated scene and three cameras.</li>
+<li><code>agent/out/validation/</code>: negative-control and perturbation evidence.</li>
+<li><code>agent/log/</code>: command output and reproduction audit records.</li>
+</ul>
+<p>The downloadable artifact manifest records the ZIP and Blender file checksums and a SHA-256 for every archived member. Together, these files let you trace the rendered motion back to the controls, contacts, and modeling assumptions that produced it.</p>
+  </main>
+  <footer class="site-footer wrap"><a href="./">← Back to the interactive demo</a><a href="downloads/reproduce.zip" download>Download the reproduction package ↗</a></footer>
+</body>
+</html>

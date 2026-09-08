@@ -1,0 +1,60 @@
+{
+  "block_count": 6,
+  "blocks_in_dustpan": 6,
+  "blocks_local_positions": [
+    [
+      -0.0475386586456222,
+      0.09048867511272629,
+      0.015419363452968413
+    ],
+    [
+      0.0027474746596598204,
+      0.09016069780947392,
+      0.015415861898563634
+    ],
+    [
+      0.059767217276442734,
+      0.09065317069964302,
+      0.0154272110488793
+    ],
+    [
+      -0.022423604339594998,
+      0.09010718987713565,
+      0.015414086679399551
+    ],
+    [
+      0.03546241915749017,
+      0.09127247553557917,
+      0.015445892586222061
+    ],
+    [
+      0.08613033958075357,
+      0.08994726221249873,
+      0.015402912667875876
+    ]
+  ],
+  "warnings": {},
+  "ik_max_position_error": 0.00023172935311557033,
+  "duration": 7.199999999999429,
+  "max_penetration_m": {
+    "all": 0.000668178669286583,
+    "block_dustpan": 0.000668178669286583,
+    "robot_self": 0.0
+  },
+  "grasp_model": "pre-grasped tools rigidly attached to original parallel grippers",
+  "quaternion_order": "wxyz",
+  "brush_block_contacts": 4544,
+  "brush_block_normal_impulse_ns": 0.6191124113368143,
+  "dustpan_block_contacts": 10155,
+  "dustpan_block_normal_impulse_ns": 1.8636633768112842,
+  "replay_max_abs_qpos_error": 0.0,
+  "validity_checks": {
+    "physical_task": true,
+    "independent_control_replay": true,
+    "state_contract": true,
+    "control_only_runtime": true,
+    "original_force_limits": true
+  },
+  "success": true,
+  "run_id": "tiago-deskclean-20260908T171409Z"
+}

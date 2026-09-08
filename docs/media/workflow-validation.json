@@ -1,0 +1,32 @@
+{
+  "success": true,
+  "same_video_packet_stream": true,
+  "video_stream_sha256": "a492aa039d002f583fba1dbbcb8383dacd9f2d65ab266885ea8a33d2923c943c",
+  "original_sha256": "838eb13af1dbc37d7af8313832956e283c3c26d2dd40f5167e44b974c7af4853",
+  "outputs": {
+    "full": {
+      "frames": 11284,
+      "fps": 3,
+      "duration_s": 3761.3333333333335,
+      "resolution": [
+        1280,
+        720
+      ],
+      "full_decode_exit_code": 0,
+      "file_bytes": 13541610,
+      "sha256": "5dc4915403771e4fba72b4c3de60f6efa08f41218939016d0c5598bd79e367c2"
+    },
+    "timelapse": {
+      "frames": 1248,
+      "fps": 24,
+      "duration_s": 52.0,
+      "resolution": [
+        1280,
+        720
+      ],
+      "full_decode_exit_code": 0,
+      "file_bytes": 1004591,
+      "sha256": "1044cfea37eddac5866b47af97e4b904e3116ae26eb00783a8841b1e7cd867f5"
+    }
+  }
+}

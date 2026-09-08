@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101512">
+  <meta name="description" content="Six seconds of video, a real TIAGo++ robot model, and a cleaning task you can inspect and reproduce. Explore the 3D replay and the contact physics behind Deskclean.">
+  <meta property="og:title" content="Six seconds of video. A robot world you can run. · Deskclean">
+  <meta property="og:description" content="From a tabletop video to an executable robot scene. Six blocks collected through contact, three camera views, an interactive 3D replay, and the complete reproduction package.">
+  <meta property="og:image" content="https://zhexiluo.github.io/astra-physical-intelligence/media/hero.jpg">
+  <meta property="og:type" content="article">
+  <title>Six seconds of video. A robot world you can run. · Deskclean / Real to Sim</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="viewer.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#comparison">Skip to the video comparison</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="#top" aria-label="Deskclean home"><span class="brand-mark" aria-hidden="true">↗</span> DESKCLEAN<span class="wordmark-note">ENGINEERING NOTES / 01</span></a>
+    <nav aria-label="Page navigation"><a href="#comparison">Watch</a><a href="#scene">Explore 3D</a><a href="#reproduce">Build it <span aria-hidden="true">↗</span></a></nav>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="eyebrow"><span class="status-dot"></span> FROM OBSERVATION TO EXECUTION <span class="hero-date">SEPTEMBER 2026</span></div>
+      <div class="hero-heading">
+        <h1 id="hero-title">Six seconds of video.<br><span>A robot world<br>you can run.</span></h1>
+        <div class="hero-index" aria-label="Verified result: six of six blocks collected"><strong>6<span>/ 6</span></strong><div>blocks collected<br>by contact, in simulation</div><a href="#evidence">Inspect the evidence ↗</a></div>
+      </div>
+      <div class="hero-bottom"><p>A brush, a dustpan, and a commercial dual-arm robot model. We wrote a control skill from the video and used contact physics to collect all six blocks.</p><a class="text-link" href="#comparison">See it move <span aria-hidden="true">↓</span></a></div>
+      <div class="hero-tags"><span>TIAGo++</span><span>MuJoCo</span><span>OpenUSD</span><span>Blender</span><span class="tag-note">Scripted control. Measured contact. Inspectable results.</span></div>
+    </section>
+
+    <section id="comparison" class="comparison wrap" aria-labelledby="comparison-title">
+      <div class="section-kicker"><span>01 / WATCH IT MOVE</span><span>THE INPUT. THE EXECUTION.</span></div>
+      <div class="section-heading"><h2 id="comparison-title">One task.<br><span>Two worlds.</span></h2><p>Watch the source beside the robot.<br>Switch cameras without losing your place.</p></div>
+      <div class="viewer" tabindex="0" aria-label="Video comparison. Space plays or pauses, arrow keys seek, and keys 1 to 3 switch cameras.">
+        <div class="video-grid">
+          <figure class="video-card source-card">
+            <figcaption><span><i class="status-dot"></i> A / HUMAN OBSERVATION</span><span>Source video</span></figcaption>
+            <div class="video-stage"><video id="source-video" src="media/source.mp4" preload="metadata" muted playsinline aria-label="Original first-person video of tabletop cleaning"></video><div class="media-state" id="source-state"><span class="media-symbol" aria-hidden="true">↗</span><strong>The original observation</strong><span>Loading source video</span></div><div class="frame-corner corner-top"></div><div class="frame-corner corner-bottom"></div></div>
+            <div class="video-footer"><span>RGB / 1280 × 720</span><output aria-live="off" id="source-time">00:00 / --:--</output></div>
+          </figure>
+          <figure class="video-card simulation-card">
+            <figcaption><span><i class="status-dot orange"></i> B / PHYSICS ROLLOUT</span><span id="camera-label">Global view</span></figcaption>
+            <div class="video-stage"><video id="simulation-video" src="media/global.mp4" preload="metadata" muted playsinline poster="media/hero.jpg" aria-label="Robot simulation from the global camera"></video><div class="media-state" id="simulation-state"><span class="media-symbol" aria-hidden="true">↗</span><strong>A scene that runs</strong><span>Loading simulation video</span></div><div class="frame-corner corner-top"></div><div class="frame-corner corner-bottom"></div></div>
+            <div class="video-footer"><div class="camera-switch" role="group" aria-label="Simulation cameras"><button type="button" data-camera="global" aria-pressed="true">Global <kbd>1</kbd></button><button type="button" data-camera="ego" aria-pressed="false">Ego <kbd>2</kbd></button><button type="button" data-camera="gripper" aria-pressed="false">Gripper <kbd>3</kbd></button></div><output aria-live="off" id="simulation-time">00:00 / --:--</output></div>
+          </figure>
+        </div>
+        <div class="transport">
+          <button class="play-button" id="play-button" type="button" disabled aria-label="Play both videos"><span id="play-icon" aria-hidden="true">▶</span><span id="play-label">Play</span></button>
+          <button class="icon-button" id="restart-button" type="button" disabled aria-label="Return to the start">↺</button>
+          <div class="timeline-wrap"><label class="sr-only" for="timeline">Shared video progress</label><input id="timeline" type="range" min="0" max="1000" value="0" step="1" disabled><div class="timeline-labels"><span>START</span><output aria-live="off" id="progress-label">0%</output><span>FINISH</span></div></div>
+          <label class="speed-control"><span class="sr-only">Playback speed</span><select id="playback-speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option></select></label>
+        </div>
+        <div class="player-note"><span>Synced by relative progress: 6 s of source video, 7.25 s of replay.</span><span><kbd>space</kbd> play / pause <span class="keyboard-arrows"><kbd>←</kbd> <kbd>→</kbd> seek</span></span></div>
+        <p class="playback-message" id="playback-message" role="status"></p>
+        <p class="recording-links"><a href="media/comparison.mp4" download>Download the four-view comparison ↓</a></p>
+      </div>
+    </section>
+
+    <section id="scene" class="scene-section wrap" aria-labelledby="scene-title">
+      <div class="section-kicker"><span>02 / GO OFF CAMERA</span><span>INTERACTIVE 3D</span></div>
+      <div class="section-heading"><h2 id="scene-title">Same scene.<br><span>Your point of view.</span></h2><p>Orbit the robot, inspect the tools, and scrub the motion.<br>A browser copy of the saved replay. Click to load.</p></div>
+      <div id="scene-viewer" class="scene-viewer" data-scene="media/scene.glb" data-poster="media/hero.jpg"></div>
+      <p class="scene-note">Geometry and animation come from the frozen Blender replay. Physics was executed in MuJoCo; this viewer lets you inspect the recorded result.</p>
+      <p class="recording-links"><a href="downloads/scene.blend" download>Download the Blender scene ↓</a><a href="downloads/web-viewer-source.zip" download>Get the viewer source ↓</a><a href="downloads/web-viewer-guide.md">Build this viewer ↗</a><a href="media/web-scene-audit.json">Inspect the transfer audit ↗</a></p>
+    </section>
+
+    <section id="method" class="method wrap" aria-labelledby="method-title">
+      <div class="section-kicker"><span>03 / HOW WE BUILT IT</span><span>FOUR EXPLICIT STEPS</span></div>
+      <div class="section-heading"><h2 id="method-title">The useful part<br><span>is the chain between them.</span></h2><p>Video informs the task. Geometry defines contact.<br>The renderer follows the recorded physics.</p></div>
+      <ol class="pipeline">
+        <li><span class="step-number">01</span><h3>Read the task.</h3><span class="step-english">OBSERVE</span><p>Identify the hold, sweep, and withdrawal in six seconds of video. Make scale and occlusion assumptions explicit.</p><span class="step-format">RGB → task &amp; dimensions</span></li>
+        <li><span class="step-number">02</span><h3>Build the world.</h3><span class="step-english">MODEL</span><p>Give the dustpan an open cavity and the brush separate contact and visual geometry. Keep their coordinate frames aligned.</p><span class="step-format">Scene spec → MJCF &amp; assets</span></li>
+        <li><span class="step-number">03</span><h3>Let contact work.</h3><span class="step-english">EXECUTE</span><p>A scripted skill and IK targets drive TIAGo++. Actuator controls advance the robot; real contact moves six free blocks.</p><span class="step-format">ctrl + mj_step → state &amp; contact</span></li>
+        <li><span class="step-number">04</span><h3>Make it inspectable.</h3><span class="step-english">RENDER</span><p>Export the trajectory with MuJoCo’s USDExporter. Bake it into Blender, add the visual tools, and mount three cameras.</p><span class="step-format">USD → Blender &amp; three views</span></li>
+      </ol>
+      <div class="method-detail"><div><span class="detail-label">A REAL ROBOT MODEL</span><h3>Two arms.<br>Original grippers.</h3></div><p>TIAGo++ is a commercial PAL Robotics platform. We use its official MuJoCo Menagerie model under Apache-2.0, retaining the robot geometry, arm joints, and force limits. For this task, the wheeled base is fixed and the tools start rigidly attached at the original parallel grippers.<a href="https://github.com/google-deepmind/mujoco_menagerie/tree/8161bba264d7fa7c99ca301e91e7fb44737676ad/pal_tiago_dual" target="_blank" rel="noopener noreferrer">Explore the pinned robot model <span aria-hidden="true">↗</span></a></p></div>
+    </section>
+
+    <section id="evidence" class="evidence" aria-labelledby="evidence-title"><div class="wrap">
+      <div class="section-kicker"><span>04 / CHECK THE PHYSICS</span><span>BEYOND A GOOD-LOOKING REPLAY</span></div>
+      <div class="section-heading"><h2 id="evidence-title">The motion looks right.<br><span>What does the evidence say?</span></h2><span id="run-status" class="run-status" role="status"><i class="status-dot orange"></i> Loading run metrics</span></div>
+      <p class="evidence-description" id="result-description">The final state, saved controls, and contact records make this run inspectable. The numbers below come from its recorded metrics.</p>
+      <dl class="metrics"><div><dt>Blocks collected</dt><dd><span id="metric-collected">—</span><small> / <span id="metric-total">6</span></small></dd><span>Final containment check</span></div><div><dt>Simulated time</dt><dd><span id="metric-duration">—</span><small> s</small></dd><span>Physical trajectory duration</span></div><div><dt>Max. penetration</dt><dd><span id="metric-penetration">—</span><small> mm</small></dd><span>Across the full rollout</span></div><div><dt>Brush impulse</dt><dd><span id="metric-impulse">—</span><small> N·s</small></dd><span>Brush–block normal contact</span></div></dl>
+      <div class="run-footer"><span>RUN <code id="run-id">LOADING RECORD</code></span><a id="metrics-link" aria-disabled="true">Inspect run metrics <span aria-hidden="true">↗</span></a><a href="media/physics-metrics.json">Original physics record ↗</a></div>
+      <figure class="physics-evidence"><a href="media/physics-evidence.svg" target="_blank" rel="noopener"><img src="media/physics-evidence.png" alt="Contact evidence: cumulative brush impulse is 0.619 newton-seconds. The reference collects six blocks; disabling brush–block contact collects zero. Three small perturbation checks each collect six." width="2560" height="1240" loading="lazy"></a><figcaption><strong>Remove the contact. Lose the result.</strong>Same initial state, same controls: disabling only brush–block contact changes collection from 6/6 to 0/6. Two initial-position perturbations within ±3 mm and one +20% change to block geometry friction each retain 6/6 in these limited checks. <a href="media/validation-summary.json">Inspect all five runs ↗</a></figcaption></figure>
+      <div class="evidence-takeaway"><span>CONTROL REPLAY</span><p>Replay the saved controls from the same initial state, and the entire recorded joint-position trajectory matches with <strong>zero numerical difference.</strong></p></div>
+      <details class="assumptions"><summary>The assumptions that make this result specific<span aria-hidden="true">+</span></summary><div class="assumption-grid"><p><strong>Estimated scale</strong>Dimensions, mass, and friction are modeling choices. The single camera was not metrically calibrated.</p><p><strong>Tools already held</strong>The base is fixed and the tools are rigidly attached. The task starts at the tool-use stage.</p><p><strong>Rigid bristle proxy</strong>Contact uses rigid geometry. Individual Blender filaments supply the brush’s visual appearance.</p><p><strong>Six blocks from the start</strong>Three are clearly visible initially in the source, and six at the end. The simulation conserves six free bodies throughout.</p><p><strong>Scripted control</strong>The video informs a hand-written skill and an IK controller. No policy training or end-to-end imitation learning is involved.</p><p><strong>One recorded trajectory</strong>All three renders and the interactive viewer follow the saved rollout. Visual reconstruction supplies appearance.</p></div></details>
+    </div></section>
+
+    <section id="process" class="process wrap" aria-labelledby="process-title">
+      <div class="section-kicker"><span>05 / INSIDE THE WORKSPACE</span><span>THE PROCESS, RECORDED</span></div>
+      <div class="section-heading"><h2 id="process-title">From scripts<br><span>to something you can inspect.</span></h2><p>The actual Blender workspace.<br>With the original recording preserved.</p></div>
+      <div class="process-grid"><figure class="workflow-card"><div class="workflow-heading"><span class="record-mark" aria-hidden="true"></span> BLENDER / LIVE WORKSPACE <span>TIME-LAPSE</span></div><div class="video-stage"><video id="workflow-video" src="media/workflow-timelapse.mp4" poster="media/workflow-final-review.png" preload="metadata" controls muted playsinline aria-label="Edited recording of actual Blender scene inspection and playback"></video><div class="media-state" id="workflow-state"><span class="media-symbol" aria-hidden="true">↗</span><strong>Inside the workspace</strong><span>Loading the process recording</span></div></div><figcaption>Real Blender GUI capture, edited and accelerated for this overview.</figcaption></figure><div class="process-copy"><span class="detail-label">THE WORK, ON RECORD.</span><h3>The work<br>behind the frames.</h3><p>Blender Python generates the scene. The GUI is where we load intermediate results, inspect cameras, and play the recorded motion. A continuous Xvfb screen capture preserves those sessions.</p><p>The highlight edit keeps scene checks, camera changes, and playback. Its cut list links every segment to the original recording.</p><div class="resource-note"><span>Execution budget</span><strong>≤ 1 GPU <i>/</i> ≤ 8 CPU</strong><span>Remote simulation and rendering · lightweight Mac preview</span></div></div></div>
+      <details class="source-sheet"><summary>Inspect the source keyframes <span aria-hidden="true">↗</span></summary><figure><img src="media/contact-sheet.jpg" alt="Contact sheet from the original video showing dustpan placement, brush motion, and the final visible blocks" loading="lazy" width="1920" height="810"><figcaption>The original observations, including occlusions and the changing number of visible blocks.</figcaption></figure></details>
+      <p class="recording-links"><span id="youtube-link-slot"></span><a href="media/workflow-full.mp4">Full original recording ↗</a><a href="media/clips.json">Edit timeline ↗</a><a href="media/events.jsonl">Recorded GUI events ↗</a></p>
+    </section>
+
+    <section id="reproduce" class="reproduce wrap" aria-labelledby="reproduce-title">
+      <div class="section-kicker"><span>06 / TAKE IT FROM HERE</span><span>CODE. SCENE. EVIDENCE.</span></div>
+      <div class="section-heading"><h2 id="reproduce-title">Don’t just watch it.<br><span>Run it.</span></h2><p>The inputs, assets, controls, and audits<br>travel with the scene.</p></div>
+      <div class="reproduce-grid"><div class="commands"><div class="terminal-bar"><span>TERMINAL</span><span>FROM THE EXTRACTED PROJECT</span></div><pre><code><span class="code-comment"># Python 3.12 / isolated environment</span>
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+<span class="code-comment"># Blender 4.2.1 / available NVIDIA GPU</span>
+export BLENDER=/path/to/blender
+export CUDA_VISIBLE_DEVICES=0
+
+<span class="code-comment"># Simulate → audit → USD → Blender → videos</span>
+bash scripts/reproduce.sh</code></pre><p>Each run writes to its own directory and preserves the archived reference. Follow the <a href="workflow.html">engineering walkthrough</a> or <a href="downloads/workflow-en.md" download>download the English guide</a>. On a Mac, open the self-contained Blender scene to inspect it.</p></div><div class="downloads"><a class="download-link" data-download="downloads/reproduce.zip" aria-disabled="true" download><div><span>REPRODUCE.ZIP</span><strong>The complete build</strong><small>Source / environment / trajectory / audit records</small></div><span class="download-icon" aria-hidden="true">↓</span><span class="file-state">Checking file</span></a><a class="download-link" data-download="downloads/scene.blend" aria-disabled="true" download><div><span>SCENE.BLEND</span><strong>The world, ready to open</strong><small>Robot / tools / three cameras / baked motion</small></div><span class="download-icon" aria-hidden="true">↓</span><span class="file-state">Checking file</span></a><a class="documentation-link" href="downloads/tiago-license.txt">TIAGo++ model license · Apache-2.0 ↗</a><a class="documentation-link" href="https://mujoco.readthedocs.io/en/3.4.0/python.html#usd-exporter" target="_blank" rel="noopener noreferrer">Official MuJoCo USD export documentation <span aria-hidden="true">↗</span></a></div></div>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><div class="footer-title">SMALL TASK.<br><span>FULL STACK.</span></div><div class="footer-bottom"><span>DESKCLEAN / ENGINEERING NOTES<br><a class="muted" href="https://zhexiluo.github.io/">Zhexi Luo</a><span class="muted"> · An experiment in executable scenes</span><br><a class="muted" href="downloads/artifact-manifest.json">Artifact manifest &amp; SHA-256 checksums ↗</a></span><a href="#top">Back to top <span aria-hidden="true">↑</span></a></div></footer>
+  <script type="module" src="viewer.js"></script>
+</body>
+</html>

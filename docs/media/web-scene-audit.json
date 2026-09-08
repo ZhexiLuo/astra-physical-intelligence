@@ -1,0 +1,547 @@
+{
+  "passed": true,
+  "source_blend_sha256": "9823c5bc2ef13cd483f413613c7f84f67179cbc6653b0e34e5f3af707ef7e98d",
+  "glb_sha256": "d2e2becacd06adea85fdcc0501441c364604e32025c3cdbabd95cc8425a96f80",
+  "size_bytes": 7199444,
+  "mesh_count": 58,
+  "frames_checked": 174,
+  "fps": 24,
+  "animation_count": 1,
+  "animation_names": [
+    "Scene"
+  ],
+  "matrix_max_abs_error": 5.960464477539062e-07,
+  "world_vertex_set_max_distance_m": 1.341104507446289e-07,
+  "matched_triangle_corner_max_distance_m": 1.341104507446289e-07,
+  "geometry_tolerance_m": 5e-05,
+  "matrix_tolerance": 2e-05,
+  "surface_comparison": "Every triangle is matched by centroid proximity and all 6 corner permutations in both directions, at frame 0; maximum corresponding-corner distance bounds each matched surface pair",
+  "raw_triangle_counts_identical": false,
+  "external_asset_uris": 0,
+  "source_blend_unchanged": true,
+  "geometry_note": "Duplicate faces in source meshes are cleaned by the official glTF pipeline. Raw and unique triangle counts are reported per mesh.",
+  "geometry_audit": {
+    "Mesh_None_id10_geom": {
+      "world_vertex_set_max_distance_m": 3.650024282819686e-08,
+      "matched_triangle_corner_max_distance_m": 3.650024149988857e-08,
+      "source_triangles": 4999,
+      "imported_triangles": 4909,
+      "source_unique_triangles": 4909,
+      "imported_unique_triangles": 4909,
+      "glb_triangles": 4909
+    },
+    "Mesh_None_id12_geom": {
+      "world_vertex_set_max_distance_m": 3.4142850324769825e-08,
+      "matched_triangle_corner_max_distance_m": 3.414284955677271e-08,
+      "source_triangles": 4999,
+      "imported_triangles": 4909,
+      "source_unique_triangles": 4909,
+      "imported_unique_triangles": 4909,
+      "glb_triangles": 4909
+    },
+    "Mesh_None_id14_geom": {
+      "world_vertex_set_max_distance_m": 3.650024282819686e-08,
+      "matched_triangle_corner_max_distance_m": 3.650024149988857e-08,
+      "source_triangles": 4999,
+      "imported_triangles": 4909,
+      "source_unique_triangles": 4909,
+      "imported_unique_triangles": 4909,
+      "glb_triangles": 4909
+    },
+    "Mesh_None_id16_geom": {
+      "world_vertex_set_max_distance_m": 3.650024282819686e-08,
+      "matched_triangle_corner_max_distance_m": 3.650024149988857e-08,
+      "source_triangles": 4999,
+      "imported_triangles": 4909,
+      "source_unique_triangles": 4909,
+      "imported_unique_triangles": 4909,
+      "glb_triangles": 4909
+    },
+    "Mesh_None_id18_geom": {
+      "world_vertex_set_max_distance_m": 1.2105761015845928e-07,
+      "matched_triangle_corner_max_distance_m": 1.210576058124894e-07,
+      "source_triangles": 19234,
+      "imported_triangles": 19234,
+      "source_unique_triangles": 19234,
+      "imported_unique_triangles": 19234,
+      "glb_triangles": 19234
+    },
+    "Mesh_None_id19_geom": {
+      "world_vertex_set_max_distance_m": 1.2019474127100693e-07,
+      "matched_triangle_corner_max_distance_m": 1.201947465904182e-07,
+      "source_triangles": 1616,
+      "imported_triangles": 1616,
+      "source_unique_triangles": 1616,
+      "imported_unique_triangles": 1616,
+      "glb_triangles": 1616
+    },
+    "Mesh_None_id20_geom": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 2896,
+      "imported_triangles": 2896,
+      "source_unique_triangles": 2896,
+      "imported_unique_triangles": 2896,
+      "glb_triangles": 2896
+    },
+    "Mesh_None_id21_geom": {
+      "world_vertex_set_max_distance_m": 6.705522537231445e-08,
+      "matched_triangle_corner_max_distance_m": 6.705522537231445e-08,
+      "source_triangles": 4806,
+      "imported_triangles": 4804,
+      "source_unique_triangles": 4804,
+      "imported_unique_triangles": 4804,
+      "glb_triangles": 4804
+    },
+    "Mesh_None_id22_geom": {
+      "world_vertex_set_max_distance_m": 6.705522537231445e-08,
+      "matched_triangle_corner_max_distance_m": 6.705522537231445e-08,
+      "source_triangles": 19766,
+      "imported_triangles": 19766,
+      "source_unique_triangles": 19766,
+      "imported_unique_triangles": 19766,
+      "glb_triangles": 19766
+    },
+    "Mesh_None_id23_geom": {
+      "world_vertex_set_max_distance_m": 1.1920928955078125e-07,
+      "matched_triangle_corner_max_distance_m": 1.1920928955078125e-07,
+      "source_triangles": 9820,
+      "imported_triangles": 9820,
+      "source_unique_triangles": 9820,
+      "imported_unique_triangles": 9820,
+      "glb_triangles": 9820
+    },
+    "Mesh_None_id24_geom": {
+      "world_vertex_set_max_distance_m": 1.2644053981603065e-07,
+      "matched_triangle_corner_max_distance_m": 1.2644054553268208e-07,
+      "source_triangles": 8149,
+      "imported_triangles": 8149,
+      "source_unique_triangles": 8149,
+      "imported_unique_triangles": 8149,
+      "glb_triangles": 8149
+    },
+    "Mesh_None_id25_geom": {
+      "world_vertex_set_max_distance_m": 1.341104507446289e-07,
+      "matched_triangle_corner_max_distance_m": 1.341104507446289e-07,
+      "source_triangles": 3758,
+      "imported_triangles": 3758,
+      "source_unique_triangles": 3758,
+      "imported_unique_triangles": 3758,
+      "glb_triangles": 3758
+    },
+    "Mesh_None_id26_geom": {
+      "world_vertex_set_max_distance_m": 6.143906006172983e-08,
+      "matched_triangle_corner_max_distance_m": 6.143906154658885e-08,
+      "source_triangles": 2802,
+      "imported_triangles": 2802,
+      "source_unique_triangles": 2802,
+      "imported_unique_triangles": 2802,
+      "glb_triangles": 2802
+    },
+    "Mesh_None_id27_geom": {
+      "world_vertex_set_max_distance_m": 5.960464477539063e-08,
+      "matched_triangle_corner_max_distance_m": 5.960464477539063e-08,
+      "source_triangles": 400,
+      "imported_triangles": 400,
+      "source_unique_triangles": 400,
+      "imported_unique_triangles": 400,
+      "glb_triangles": 400
+    },
+    "Mesh_None_id28_geom": {
+      "world_vertex_set_max_distance_m": 5.960464477539063e-08,
+      "matched_triangle_corner_max_distance_m": 5.960464477539063e-08,
+      "source_triangles": 400,
+      "imported_triangles": 400,
+      "source_unique_triangles": 400,
+      "imported_unique_triangles": 400,
+      "glb_triangles": 400
+    },
+    "Mesh_None_id29_geom": {
+      "world_vertex_set_max_distance_m": 6.143906006172983e-08,
+      "matched_triangle_corner_max_distance_m": 6.143906154658885e-08,
+      "source_triangles": 400,
+      "imported_triangles": 400,
+      "source_unique_triangles": 400,
+      "imported_unique_triangles": 400,
+      "glb_triangles": 400
+    },
+    "Mesh_None_id2_geom": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 42613,
+      "imported_triangles": 41098,
+      "source_unique_triangles": 41096,
+      "imported_unique_triangles": 41096,
+      "glb_triangles": 41098
+    },
+    "Mesh_None_id30_geom": {
+      "world_vertex_set_max_distance_m": 8.56006536764653e-08,
+      "matched_triangle_corner_max_distance_m": 8.560065398421926e-08,
+      "source_triangles": 6991,
+      "imported_triangles": 6991,
+      "source_unique_triangles": 6991,
+      "imported_unique_triangles": 6991,
+      "glb_triangles": 6991
+    },
+    "Mesh_None_id31_geom": {
+      "world_vertex_set_max_distance_m": 6.143906006172983e-08,
+      "matched_triangle_corner_max_distance_m": 6.143906154658885e-08,
+      "source_triangles": 1431,
+      "imported_triangles": 1404,
+      "source_unique_triangles": 1401,
+      "imported_unique_triangles": 1401,
+      "glb_triangles": 1404
+    },
+    "Mesh_None_id32_geom": {
+      "world_vertex_set_max_distance_m": 5.960464477539063e-08,
+      "matched_triangle_corner_max_distance_m": 5.960464477539063e-08,
+      "source_triangles": 1431,
+      "imported_triangles": 1404,
+      "source_unique_triangles": 1401,
+      "imported_unique_triangles": 1401,
+      "glb_triangles": 1404
+    },
+    "Mesh_None_id38_geom": {
+      "world_vertex_set_max_distance_m": 6.705522537231445e-08,
+      "matched_triangle_corner_max_distance_m": 6.705522537231445e-08,
+      "source_triangles": 4806,
+      "imported_triangles": 4804,
+      "source_unique_triangles": 4804,
+      "imported_unique_triangles": 4804,
+      "glb_triangles": 4804
+    },
+    "Mesh_None_id39_geom": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 19766,
+      "imported_triangles": 19766,
+      "source_unique_triangles": 19766,
+      "imported_unique_triangles": 19766,
+      "glb_triangles": 19766
+    },
+    "Mesh_None_id3_geom": {
+      "world_vertex_set_max_distance_m": 4.470348358154297e-08,
+      "matched_triangle_corner_max_distance_m": 4.470348358154297e-08,
+      "source_triangles": 2000,
+      "imported_triangles": 1989,
+      "source_unique_triangles": 1989,
+      "imported_unique_triangles": 1989,
+      "glb_triangles": 1989
+    },
+    "Mesh_None_id40_geom": {
+      "world_vertex_set_max_distance_m": 8.462232869987929e-08,
+      "matched_triangle_corner_max_distance_m": 8.462232866585662e-08,
+      "source_triangles": 9820,
+      "imported_triangles": 9820,
+      "source_unique_triangles": 9820,
+      "imported_unique_triangles": 9820,
+      "glb_triangles": 9820
+    },
+    "Mesh_None_id41_geom": {
+      "world_vertex_set_max_distance_m": 1.2013700256829907e-07,
+      "matched_triangle_corner_max_distance_m": 1.2013700229374393e-07,
+      "source_triangles": 8149,
+      "imported_triangles": 8149,
+      "source_unique_triangles": 8149,
+      "imported_unique_triangles": 8149,
+      "glb_triangles": 8149
+    },
+    "Mesh_None_id42_geom": {
+      "world_vertex_set_max_distance_m": 1.341104507446289e-07,
+      "matched_triangle_corner_max_distance_m": 1.341104507446289e-07,
+      "source_triangles": 3758,
+      "imported_triangles": 3758,
+      "source_unique_triangles": 3758,
+      "imported_unique_triangles": 3758,
+      "glb_triangles": 3758
+    },
+    "Mesh_None_id43_geom": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 2802,
+      "imported_triangles": 2802,
+      "source_unique_triangles": 2802,
+      "imported_unique_triangles": 2802,
+      "glb_triangles": 2802
+    },
+    "Mesh_None_id44_geom": {
+      "world_vertex_set_max_distance_m": 5.960464477539063e-08,
+      "matched_triangle_corner_max_distance_m": 5.960464477539063e-08,
+      "source_triangles": 400,
+      "imported_triangles": 400,
+      "source_unique_triangles": 400,
+      "imported_unique_triangles": 400,
+      "glb_triangles": 400
+    },
+    "Mesh_None_id45_geom": {
+      "world_vertex_set_max_distance_m": 2.9802322387695312e-08,
+      "matched_triangle_corner_max_distance_m": 2.9802322387695312e-08,
+      "source_triangles": 400,
+      "imported_triangles": 400,
+      "source_unique_triangles": 400,
+      "imported_unique_triangles": 400,
+      "glb_triangles": 400
+    },
+    "Mesh_None_id46_geom": {
+      "world_vertex_set_max_distance_m": 5.960464477539063e-08,
+      "matched_triangle_corner_max_distance_m": 5.960464477539063e-08,
+      "source_triangles": 400,
+      "imported_triangles": 400,
+      "source_unique_triangles": 400,
+      "imported_unique_triangles": 400,
+      "glb_triangles": 400
+    },
+    "Mesh_None_id47_geom": {
+      "world_vertex_set_max_distance_m": 7.300048565639372e-08,
+      "matched_triangle_corner_max_distance_m": 7.300048299977713e-08,
+      "source_triangles": 6991,
+      "imported_triangles": 6991,
+      "source_unique_triangles": 6991,
+      "imported_unique_triangles": 6991,
+      "glb_triangles": 6991
+    },
+    "Mesh_None_id48_geom": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 1431,
+      "imported_triangles": 1404,
+      "source_unique_triangles": 1401,
+      "imported_unique_triangles": 1401,
+      "glb_triangles": 1404
+    },
+    "Mesh_None_id49_geom": {
+      "world_vertex_set_max_distance_m": 2.9802322387695312e-08,
+      "matched_triangle_corner_max_distance_m": 2.9802322387695312e-08,
+      "source_triangles": 1431,
+      "imported_triangles": 1404,
+      "source_unique_triangles": 1401,
+      "imported_unique_triangles": 1401,
+      "glb_triangles": 1404
+    },
+    "Mesh_None_id4_geom": {
+      "world_vertex_set_max_distance_m": 4.214684778958144e-08,
+      "matched_triangle_corner_max_distance_m": 4.2146848510894035e-08,
+      "source_triangles": 2000,
+      "imported_triangles": 1989,
+      "source_unique_triangles": 1989,
+      "imported_unique_triangles": 1989,
+      "glb_triangles": 1989
+    },
+    "Mesh_None_id5_geom": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 1460,
+      "imported_triangles": 1460,
+      "source_unique_triangles": 1460,
+      "imported_unique_triangles": 1460,
+      "glb_triangles": 1460
+    },
+    "Mesh_None_id6_geom": {
+      "world_vertex_set_max_distance_m": 2.9802322387695312e-08,
+      "matched_triangle_corner_max_distance_m": 2.9802322387695312e-08,
+      "source_triangles": 3948,
+      "imported_triangles": 3948,
+      "source_unique_triangles": 3948,
+      "imported_unique_triangles": 3948,
+      "glb_triangles": 3948
+    },
+    "Mesh_None_id7_geom": {
+      "world_vertex_set_max_distance_m": 2.9802322387695312e-08,
+      "matched_triangle_corner_max_distance_m": 2.9802322387695312e-08,
+      "source_triangles": 3948,
+      "imported_triangles": 3948,
+      "source_unique_triangles": 3948,
+      "imported_unique_triangles": 3948,
+      "glb_triangles": 3948
+    },
+    "Mesh_None_id8_geom": {
+      "world_vertex_set_max_distance_m": 3.332000986233652e-08,
+      "matched_triangle_corner_max_distance_m": 3.332000937312528e-08,
+      "source_triangles": 1140,
+      "imported_triangles": 1140,
+      "source_unique_triangles": 1140,
+      "imported_unique_triangles": 1140,
+      "glb_triangles": 1140
+    },
+    "Mesh_None_id9_geom": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 12,
+      "imported_triangles": 12,
+      "source_unique_triangles": 12,
+      "imported_unique_triangles": 12,
+      "glb_triangles": 12
+    },
+    "Mesh_block_0_id53_geom": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 188,
+      "imported_triangles": 188,
+      "source_unique_triangles": 188,
+      "imported_unique_triangles": 188,
+      "glb_triangles": 188
+    },
+    "Mesh_block_1_id54_geom": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 188,
+      "imported_triangles": 188,
+      "source_unique_triangles": 188,
+      "imported_unique_triangles": 188,
+      "glb_triangles": 188
+    },
+    "Mesh_block_2_id55_geom": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 188,
+      "imported_triangles": 188,
+      "source_unique_triangles": 188,
+      "imported_unique_triangles": 188,
+      "glb_triangles": 188
+    },
+    "Mesh_block_3_id56_geom": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 188,
+      "imported_triangles": 188,
+      "source_unique_triangles": 188,
+      "imported_unique_triangles": 188,
+      "glb_triangles": 188
+    },
+    "Mesh_block_4_id57_geom": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 188,
+      "imported_triangles": 188,
+      "source_unique_triangles": 188,
+      "imported_unique_triangles": 188,
+      "glb_triangles": 188
+    },
+    "Mesh_block_5_id58_geom": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 188,
+      "imported_triangles": 188,
+      "source_unique_triangles": 188,
+      "imported_unique_triangles": 188,
+      "glb_triangles": 188
+    },
+    "Studio floor": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 188,
+      "imported_triangles": 188,
+      "source_unique_triangles": 188,
+      "imported_unique_triangles": 188,
+      "glb_triangles": 188
+    },
+    "Table leg 00": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 188,
+      "imported_triangles": 188,
+      "source_unique_triangles": 188,
+      "imported_unique_triangles": 188,
+      "glb_triangles": 188
+    },
+    "Table leg 01": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 188,
+      "imported_triangles": 188,
+      "source_unique_triangles": 188,
+      "imported_unique_triangles": 188,
+      "glb_triangles": 188
+    },
+    "Table leg 10": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 188,
+      "imported_triangles": 188,
+      "source_unique_triangles": 188,
+      "imported_unique_triangles": 188,
+      "glb_triangles": 188
+    },
+    "Table leg 11": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 188,
+      "imported_triangles": 188,
+      "source_unique_triangles": 188,
+      "imported_unique_triangles": 188,
+      "glb_triangles": 188
+    },
+    "Tabletop \u2022 observed grid": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 188,
+      "imported_triangles": 188,
+      "source_unique_triangles": 188,
+      "imported_unique_triangles": 188,
+      "glb_triangles": 188
+    },
+    "brush_filaments": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 6240,
+      "imported_triangles": 6240,
+      "source_unique_triangles": 6240,
+      "imported_unique_triangles": 6240,
+      "glb_triangles": 6240
+    },
+    "brush_handle": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 124,
+      "imported_triangles": 124,
+      "source_unique_triangles": 124,
+      "imported_unique_triangles": 124,
+      "glb_triangles": 124
+    },
+    "brush_head": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 188,
+      "imported_triangles": 188,
+      "source_unique_triangles": 188,
+      "imported_unique_triangles": 188,
+      "glb_triangles": 188
+    },
+    "dustpan_entry": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 2,
+      "imported_triangles": 2,
+      "source_unique_triangles": 2,
+      "imported_unique_triangles": 2,
+      "glb_triangles": 2
+    },
+    "dustpan_handle": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 124,
+      "imported_triangles": 124,
+      "source_unique_triangles": 124,
+      "imported_unique_triangles": 124,
+      "glb_triangles": 124
+    },
+    "dustpan_lip": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 188,
+      "imported_triangles": 188,
+      "source_unique_triangles": 188,
+      "imported_unique_triangles": 188,
+      "glb_triangles": 188
+    },
+    "dustpan_shell": {
+      "world_vertex_set_max_distance_m": 0.0,
+      "matched_triangle_corner_max_distance_m": 0.0,
+      "source_triangles": 5232,
+      "imported_triangles": 5232,
+      "source_unique_triangles": 4035,
+      "imported_unique_triangles": 4035,
+      "glb_triangles": 5232
+    }
+  }
+}

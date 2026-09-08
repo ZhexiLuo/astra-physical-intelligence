@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "collected": 6,
+  "total_blocks": 6,
+  "duration_s": 7.199999999999429,
+  "max_penetration_m": 0.000668178669286583,
+  "contact_impulse_ns": 0.6191124113368143,
+  "run_id": "tiago-deskclean-20260908T171409Z",
+  "raw_metrics": "physics-metrics.json",
+  "replay_max_abs_qpos_error": 0.0,
+  "robot_self_penetration_m": 0.0,
+  "validity_checks": {
+    "physical_task": true,
+    "independent_control_replay": true,
+    "state_contract": true,
+    "control_only_runtime": true,
+    "original_force_limits": true
+  }
+}

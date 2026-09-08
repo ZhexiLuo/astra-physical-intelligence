@@ -1,0 +1,14 @@
+{
+  "package": "@google/model-viewer",
+  "version": "4.3.1",
+  "source": "https://github.com/google/model-viewer",
+  "tarball": "https://registry.npmjs.org/@google/model-viewer/-/model-viewer-4.3.1.tgz",
+  "npm_integrity_verified": "sha512-GP+inXhAtY31E8rILVmByA6z8CZZjdlNajddppyI1/j1eIaSQiZcMRaUqTFe7+jv4mzRzwKIOiKBud0apiv+WQ==",
+  "bundle_sha256": "283b0672384614b4847636c306fc93fe4b1fcadc76d668b4e47f0ca76bcf033b",
+  "license": "Apache-2.0; bundled third-party notices retained in JavaScript",
+  "third_party_licenses": {
+    "three-license.txt": "https://github.com/mrdoob/three.js/blob/r183/LICENSE",
+    "lit-license.txt": "https://github.com/lit/lit/blob/main/LICENSE",
+    "gainmap-license.txt": "https://github.com/MONOGRID/gainmap-js/blob/main/LICENSE"
+  }
+}

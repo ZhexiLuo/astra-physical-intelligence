@@ -1,0 +1,505 @@
+{
+  "reference_run_id": "tiago-deskclean-20260908T171409Z",
+  "archive_prefix": "deskclean-real2sim",
+  "archive": {
+    "filename": "reproduce.zip",
+    "size_bytes": 18752030,
+    "sha256": "dd001c398e5171d78694e4ada911a54286c1dadd6d8c8e7caf208780dd840f48"
+  },
+  "standalone_scene": {
+    "filename": "scene.blend",
+    "size_bytes": 20379112,
+    "sha256": "9823c5bc2ef13cd483f413613c7f84f67179cbc6653b0e34e5f3af707ef7e98d"
+  },
+  "compression": {
+    "method": "DEFLATE",
+    "level": 6,
+    "worker_threads": 1,
+    "cpu_affinity": [
+      248,
+      249,
+      250,
+      251,
+      252,
+      253,
+      254,
+      255
+    ]
+  },
+  "manifest_scope": "External manifest covers every ZIP member file.",
+  "verification": {
+    "testzip_passed": true,
+    "required_paths_complete": true,
+    "all_member_sha256_verified": true,
+    "verified_file_count": 93,
+    "source_files_unchanged": true,
+    "standalone_scene_matches_source": true
+  },
+  "files": [
+    {
+      "path": "deskclean-real2sim/README.md",
+      "size_bytes": 2851,
+      "sha256": "9a5c6620db3bdc2fada907660d4d8782cf69e5878dc154030443cd596b320e82"
+    },
+    {
+      "path": "deskclean-real2sim/agent/doc/robot-research.md",
+      "size_bytes": 7599,
+      "sha256": "c6652e88992684725185f7cfaf9cb8a5db9dba194e37c86ce31bd00a06980894"
+    },
+    {
+      "path": "deskclean-real2sim/agent/doc/simulation-contract.md",
+      "size_bytes": 4979,
+      "sha256": "a913eff49dbfb8ede917ed0b0fffd9678f79708ac5712debc08ee3e48eabc6d6"
+    },
+    {
+      "path": "deskclean-real2sim/agent/doc/workflow-zh.md",
+      "size_bytes": 9224,
+      "sha256": "0509cb28add9da9161ef36bc493b778f44bfe5a86f1bfc97a0cd1308974d58a4"
+    },
+    {
+      "path": "deskclean-real2sim/agent/log/asset-build.log",
+      "size_bytes": 306,
+      "sha256": "dceea170c50cfb1475d8894b9717620fd137c38da3196f528f5b6cf6204c4908"
+    },
+    {
+      "path": "deskclean-real2sim/agent/log/blend-validation.log",
+      "size_bytes": 321,
+      "sha256": "18b064f28b845a6d6820eb6fea544a5b4d62e18d282ff2951e97ba819649d6e9"
+    },
+    {
+      "path": "deskclean-real2sim/agent/log/blender-control-test-green.log",
+      "size_bytes": 98,
+      "sha256": "c346f1228fe88f4ab3cb336ffa610dc3a34ec7c7bb7d05df7a1c222f2d928881"
+    },
+    {
+      "path": "deskclean-real2sim/agent/log/blender-import.log",
+      "size_bytes": 470,
+      "sha256": "4da8c3f37682719bf76b0b9a0f4a3b83edfa4b21ad8174c6d37e19a07c9efc59"
+    },
+    {
+      "path": "deskclean-real2sim/agent/log/physics-validation.log",
+      "size_bytes": 155,
+      "sha256": "18e7b1af8f821535149e79acf79a5d90b3b1524b60108f8f4c5e740f00e29576"
+    },
+    {
+      "path": "deskclean-real2sim/agent/log/reproduction-smoke.log",
+      "size_bytes": 3920,
+      "sha256": "93ea7ecd8833cbb0e1c37cc18c20444daebb2f1a1e6f94be829a3832e5f24781"
+    },
+    {
+      "path": "deskclean-real2sim/agent/log/simulation-portability.log",
+      "size_bytes": 62,
+      "sha256": "e512d5751b2daeaa6a8c47b9f6603b92efd350f3d12c96cbb4f98c39bec25d76"
+    },
+    {
+      "path": "deskclean-real2sim/agent/log/simulation-test-final.log",
+      "size_bytes": 104,
+      "sha256": "e26d46aa88c9e2dcd0b0a647ada2bf2bf6985ffe3f1b2e5e1bb03254d59be8f2"
+    },
+    {
+      "path": "deskclean-real2sim/agent/log/usd-export.log",
+      "size_bytes": 315,
+      "sha256": "d981cf4c4a292f2cbbf04484f2fcc1961f28521984cc6effbe356c30e8f65dc9"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/assets/asset-report.json",
+      "size_bytes": 140,
+      "sha256": "59899ba84651c6e3bee4ac2c99561f3557d63ca680b2755b7dfe175e88ce638f"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/assets/tools.blend",
+      "size_bytes": 1295196,
+      "sha256": "ce8d6c21f097ea154a4fef54254e6994543e5e387665d1558423da8d7c7a1b24"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/blend-validation.json",
+      "size_bytes": 201,
+      "sha256": "34f0cbfe2922e59bad0807a0c79b37d25dfa7a345ff9a9dcd2b611c52be621ed"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/deskclean.blend",
+      "size_bytes": 20379112,
+      "sha256": "9823c5bc2ef13cd483f413613c7f84f67179cbc6653b0e34e5f3af707ef7e98d"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/reproduction-smoke-result.json",
+      "size_bytes": 1464,
+      "sha256": "e56bd9c515099ab28624df861e5b0ec63a35894f07d061bd0c96875786c56d11"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/requirements.lock",
+      "size_bytes": 743,
+      "sha256": "11acec1c330a8166cc96598bed580fea9735cc110542fe634b3e26bb031026ec"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/scene_spec.json",
+      "size_bytes": 2817,
+      "sha256": "79dc2ea46229b140bf834c07486abde5bc84b0c206e2da716ace9c963cf6baf3"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/simulation/contacts.jsonl",
+      "size_bytes": 19331078,
+      "sha256": "b2fd860dc449805077d82077913c69d06de4530a2de05faf2ac0057ead7e891e"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/simulation/metrics.json",
+      "size_bytes": 1467,
+      "sha256": "8e0e5314fdd11f8ae482924d1018c5d73d761ee20f8e8993b1bc8e8a52ab53df"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/simulation/resolved-scene-spec.json",
+      "size_bytes": 3060,
+      "sha256": "0ebb236afd4273bae081ac456800085832fac7d1cd5b80e0c9c770cdaf0f6e03"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/simulation/scene.xml",
+      "size_bytes": 23290,
+      "sha256": "a8206caf1e448301444f18a28c4fd6cdae8492886a0118edc08e8f71369bbd22"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/simulation/trajectory.npz",
+      "size_bytes": 3890669,
+      "sha256": "4d5ca3de4f51627c0c0ada2c22c8cfcfd327bc36715aeaddcc4bc7f4b77cb46a"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/usd/export-report.json",
+      "size_bytes": 352,
+      "sha256": "67536fc4effeb5255de9e36be705dfdc451d942fcbc5caa915d4ec524dcd492c"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/usd/frames/frame_174.usdc",
+      "size_bytes": 2522599,
+      "sha256": "d53763e701fcb97c1889292ce3cc3f3273d2bfa5bd45ea4d508940ca0de68af9"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/validation/block-friction-plus20.json",
+      "size_bytes": 3557,
+      "sha256": "556d65e724bcb4c631d3b9ece5736bc8d29e45a8ab69ec8496ab3de46f6cd19f"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/validation/contact-exclusion-smoke-test.json",
+      "size_bytes": 1473,
+      "sha256": "8e675a5d7aabdec8cf6f7d63025d05df88cd5bab93612b07515457a9f97bfb39"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/validation/evidence-data.npz",
+      "size_bytes": 33117,
+      "sha256": "01e9faab026c0f3679f091fc8f1f2d621c8da62e8e5267dda95088291a763377"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/validation/figure-provenance.json",
+      "size_bytes": 718,
+      "sha256": "59b24ee10603c44f15c66e96309cd8e64bb066c8fda94f8a6aa8117f2dbbbde3"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/validation/no-brush-block-contact.json",
+      "size_bytes": 3214,
+      "sha256": "1c4748766ec9d07103a9634ab3844b36fc9ff92d24ad23cabf18756e38bc7ab8"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/validation/physics-evidence.png",
+      "size_bytes": 212970,
+      "sha256": "f6ac2fd6482d40ee5c5e7ea035130082f2660f5d7bb7501504d79e38a3598469"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/validation/physics-evidence.svg",
+      "size_bytes": 204082,
+      "sha256": "aeeb9539d5e4c7caab6f8cf02731058311a07221f1ba650c3e6b343f59a9a41c"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/validation/reference-replay.json",
+      "size_bytes": 3539,
+      "sha256": "29b42d84267187bb3a541ce37ef785de8a9dc66ac09f53c2ca1be81eec8bd50e"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/validation/validation-notes.md",
+      "size_bytes": 2970,
+      "sha256": "22ef3ea977d2c9c51c17d605ffcdaa05c06af70e24c7e9736ed73722fc8bdcba"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/validation/validation-summary.json",
+      "size_bytes": 23783,
+      "sha256": "8bb3305253f1a6791517a8051ec3703ebec20ec692a419882682c587ad270bc4"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/validation/xy-jitter-seed11.json",
+      "size_bytes": 3773,
+      "sha256": "7adaa26b7b2e4910d03a2e9d20d987d78fe43cec704ab1cb27656950c73f444e"
+    },
+    {
+      "path": "deskclean-real2sim/agent/out/validation/xy-jitter-seed29.json",
+      "size_bytes": 3787,
+      "sha256": "6f5a308529fc7df38d40aa3a54a1b90b5b3b542dad9f116bea74d0bb3ff5f96e"
+    },
+    {
+      "path": "deskclean-real2sim/agent/scripts/blender_control.py",
+      "size_bytes": 1196,
+      "sha256": "0eeb6f61985e2c639fe25dd0dd663e256510bb5cfd4a7b2e385c6ee54709a8e2"
+    },
+    {
+      "path": "deskclean-real2sim/agent/scripts/physics_validation.py",
+      "size_bytes": 8912,
+      "sha256": "e6c0c601a462c630de80debb257c0b480e395df7cbce46f5830158745682a17e"
+    },
+    {
+      "path": "deskclean-real2sim/agent/scripts/plot_physics_evidence.py",
+      "size_bytes": 6667,
+      "sha256": "0f3e3069c96ebc2f62f545427f1469c6993d734c087441c9b4d281221db2285a"
+    },
+    {
+      "path": "deskclean-real2sim/agent/test/check_blend.py",
+      "size_bytes": 1362,
+      "sha256": "fe56048da9658311e3f28660c7e60aa147b8c1790db68b9d09eaef10c6627a25"
+    },
+    {
+      "path": "deskclean-real2sim/agent/test/reproduction_smoke.py",
+      "size_bytes": 3299,
+      "sha256": "8b4053c36aeeb9f7d2209bec10c23182994faf768323a7e8476a06ab1bcadd6b"
+    },
+    {
+      "path": "deskclean-real2sim/agent/test/simulation_contract.py",
+      "size_bytes": 4182,
+      "sha256": "78e7e46b1f5acfd6a6e1b395c81db98411cc00046f20826d0cfb00521e063157"
+    },
+    {
+      "path": "deskclean-real2sim/agent/test/test_assets.py",
+      "size_bytes": 991,
+      "sha256": "7363c521ef3ec2ecec09c471944b3c6bc9461c24a90e40afbdca58152b143f08"
+    },
+    {
+      "path": "deskclean-real2sim/agent/test/test_blender_control.py",
+      "size_bytes": 1955,
+      "sha256": "ee1a7bff068aae03c9f7da9071e5331f6bcb082aacc2ad8a3c2a8d5526c2a8b8"
+    },
+    {
+      "path": "deskclean-real2sim/inputs/deskclean.mp4",
+      "size_bytes": 1372203,
+      "sha256": "9bc2b346cb6a984fedc2ad26a5d574b02f545fc7aa415f83e442654c6c174734"
+    },
+    {
+      "path": "deskclean-real2sim/requirements.txt",
+      "size_bytes": 98,
+      "sha256": "53a04c9dc34c0e69574a6de7e6cf8eb746ee8eee8a286754aea48a674fd3dea0"
+    },
+    {
+      "path": "deskclean-real2sim/scripts/readme.md",
+      "size_bytes": 546,
+      "sha256": "5937ca7e857a09f1e5e322b4d698371ff9fd3cf03baa8fe2de4c926cb54a0475"
+    },
+    {
+      "path": "deskclean-real2sim/scripts/reproduce.sh",
+      "size_bytes": 2364,
+      "sha256": "d048512b4fe15e17beed9fb8b0e18d67f5c615c0afdd7b0ccf77e5619a0da76e"
+    },
+    {
+      "path": "deskclean-real2sim/src/blender_scene.py",
+      "size_bytes": 6910,
+      "sha256": "bf091a32870fc7b828674e353485d1334f217befc292bf33449c1fa76fb1b7a8"
+    },
+    {
+      "path": "deskclean-real2sim/src/create_assets.py",
+      "size_bytes": 7634,
+      "sha256": "0d44c0de4ed7a62db5314e689383348c192b7a06088f2574503cc0879c3e1065"
+    },
+    {
+      "path": "deskclean-real2sim/src/export_usd.py",
+      "size_bytes": 2254,
+      "sha256": "dfa55e37ca03229f4885884e6e6adef5c6916bf9e3ea3e2088ecf0aebc9bb7cc"
+    },
+    {
+      "path": "deskclean-real2sim/src/import_replay.py",
+      "size_bytes": 6334,
+      "sha256": "26c2ae09d15c00bf6b75846e4c8411a8371032f35404c0a1d02c5a68b590203c"
+    },
+    {
+      "path": "deskclean-real2sim/src/readme.md",
+      "size_bytes": 576,
+      "sha256": "149d8a8eaedc8b522b592dff2b6672ff554b9f4462592a66cd3ab4251e938468"
+    },
+    {
+      "path": "deskclean-real2sim/src/render.py",
+      "size_bytes": 2203,
+      "sha256": "17bd90476489d70aab7d0585948c357dc4a6dd221eb383fe295f95332c74711a"
+    },
+    {
+      "path": "deskclean-real2sim/src/robot_control.py",
+      "size_bytes": 4275,
+      "sha256": "c818990cd87c42fca8a7cbd9a19ad59d705b320db9248147f61c1b4352b2918b"
+    },
+    {
+      "path": "deskclean-real2sim/src/simulation.py",
+      "size_bytes": 15261,
+      "sha256": "af85aa5586c035e551f5544189734557359e4978e6511f052ce8574b6fee1377"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/LICENSE",
+      "size_bytes": 422936,
+      "sha256": "c9842b16d0597fc0e28d622232ad274fecbec8c3de50a288d89ebf7109b0defd"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/README.md",
+      "size_bytes": 27409,
+      "sha256": "ef6f86d200101abe505ad40afaf9c335bcee51c8e692d212a8b02a0a19292f8b"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/CHANGELOG.md",
+      "size_bytes": 140,
+      "sha256": "6a6b6a355d2c7c895647dbcb7a899acfc31e38d15c2bb7e0411dd88fb3666690"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/LICENSE",
+      "size_bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/README.md",
+      "size_bytes": 2065,
+      "sha256": "e4af626e6831e975667318c372bcb4f03efaae08d7c25dd9f31e70ef6c706cc4"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/assets/arm/arm_1.stl",
+      "size_bytes": 240384,
+      "sha256": "a98a1becdaa0f17182ae242cbf829c327a108f11bb7dbdf1554ec76d7364c599"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/assets/arm/arm_2.stl",
+      "size_bytes": 988384,
+      "sha256": "df8df6ed235678f8e0b48f99024cb5cd9cea83c0ca6963275fe704f07433f508"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/assets/arm/arm_3.stl",
+      "size_bytes": 491084,
+      "sha256": "7894bc60a7c2b68cdeaa991e9ad03f48abcb5e72f8ffb5a50b1f4edadfb417e9"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/assets/arm/arm_4.stl",
+      "size_bytes": 407534,
+      "sha256": "12db11cef0bb9b743ce350946b08124e98890f30592516307a17c5b7c3582ea5"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/assets/arm/arm_5-wrist-2017.stl",
+      "size_bytes": 187984,
+      "sha256": "ad75b9064ed916360342c78cad139beed42e9f1429986efcad6ea1ad71578c28"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/assets/arm/arm_6-wrist-2017.stl",
+      "size_bytes": 140184,
+      "sha256": "b3599f60d6c1c6df30266e2eee48b3bf1d1d59ded41a7acb134ee2917176be3e"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/assets/base/base_antena_link.stl",
+      "size_bytes": 75084,
+      "sha256": "736b08ffb56bb2d461209bce857b9a0ad0411e49447329ff8d0d8fa7310b92be"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/assets/base/base_dock_link.stl",
+      "size_bytes": 73084,
+      "sha256": "d13ab33c5a39f9daa7f34a1b728c6b8afa2b105671846af29eb9f2d8c617cd0c"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/assets/base/base_link.stl",
+      "size_bytes": 2130734,
+      "sha256": "851d2e87fdbd320585385a6a1f8f2a1addd9a234cd3782c00fb724d6410d2761"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/assets/dock/dock.stl",
+      "size_bytes": 10484,
+      "sha256": "75416458fa16f4a7cd6129a9a4b43a984ad7e0d88aef88cca3fa1a534546867f"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/assets/dock/dock_collision.stl",
+      "size_bytes": 10484,
+      "sha256": "75416458fa16f4a7cd6129a9a4b43a984ad7e0d88aef88cca3fa1a534546867f"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/assets/gripper/gripper_finger_link.stl",
+      "size_bytes": 71634,
+      "sha256": "49c43b68c72d3d510e231ec5b42ffe99de6b164874e5f79a7ab66d634373bb58"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/assets/gripper/gripper_link.stl",
+      "size_bytes": 349634,
+      "sha256": "a9ffd5ec40eeef1dfd15697d21851dc1e32f424e6ba94eee2a89ff2c701b59f7"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/assets/head/head_1.stl",
+      "size_bytes": 80884,
+      "sha256": "da15ef00f276d4692df912889dc49561fc6b7958bf925aada017f52a15036721"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/assets/head/head_2.stl",
+      "size_bytes": 144884,
+      "sha256": "8cc0b5fc791d313670f5d857cc83df415de6435a7c83d407b112dc6334a33158"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/assets/objects/antenna.stl",
+      "size_bytes": 197484,
+      "sha256": "5dcf4914afdaec9c4682a0ad2f9b2b0b25d120cdbed470026267d843bf7d5119"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/assets/objects/cover.stl",
+      "size_bytes": 434784,
+      "sha256": "2dbc2c811a92a181436735be72a0eee89ab1d249d953195129cd0d687093055c"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/assets/sensors/sick_tim551.stl",
+      "size_bytes": 100084,
+      "sha256": "9e0184e01a67754bce3a008fb1f52b292dbda69857ed9092909d211817915cf2"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/assets/torso/torso_fix.stl",
+      "size_bytes": 57084,
+      "sha256": "bd4c521a648e041a8112ddb9cd94987e410cd53eddb6d81869057403e8fc5545"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/assets/torso/torso_lift_dual_arm.stl",
+      "size_bytes": 961784,
+      "sha256": "75bb6a3fd9a46c3790f35d1e528dac1f2c170708bf1366fb4326af6791e1a57c"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/assets/wheels/wheel_link.stl",
+      "size_bytes": 250034,
+      "sha256": "6e444ff63f1d29662db4a601ec3bf7be8f9565d393045957db8c2a98e807632a"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/scene_motor.xml",
+      "size_bytes": 928,
+      "sha256": "2d48d996caa63373d6252a56fa9a2d1a3c9a2a967bc8ac2389c516c9de36f32f"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/scene_position.xml",
+      "size_bytes": 934,
+      "sha256": "4be40a22f1bef0ef2952534da396c80b97942a43ab4a5e3a37deffd8e52e0880"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/scene_velocity.xml",
+      "size_bytes": 934,
+      "sha256": "ad1602c9d3cc565b6f60b9dd41225281f88582a46de2d40569a54740ea786d72"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/tiago_dual.png",
+      "size_bytes": 388210,
+      "sha256": "053575a60a95145d19cdd69357bc6a9f3766b20b11563f9c22402220793fd3ba"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/tiago_dual.xml",
+      "size_bytes": 15077,
+      "sha256": "b20f7fc5a208f029ecde7e7932d4bb6c0172c3b3edee36db72f8b7661285bb58"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/tiago_dual_motor.xml",
+      "size_bytes": 2415,
+      "sha256": "72e962891364e0a991319e8af26f36312959fdec10da2a80ce08affdb3d11775"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/tiago_dual_position.xml",
+      "size_bytes": 3587,
+      "sha256": "5a4947ec2521840219c1a67c08c52447666c77bed4f6b86d8b8404ec2d3cfede"
+    },
+    {
+      "path": "deskclean-real2sim/thirdparty/mujoco_menagerie/pal_tiago_dual/tiago_dual_velocity.xml",
+      "size_bytes": 2792,
+      "sha256": "f4acd79147e3ac53bf7a204764cb9ff6dcf6ee7c5f961753cb2319859e63ba3c"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+mujoco[usd]==3.4.0
+numpy==2.5.0
+scipy==1.18.0
+usd-core==26.8
+pillow==12.2.0
+imageio-ffmpeg==0.6.0

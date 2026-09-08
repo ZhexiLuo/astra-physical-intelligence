@@ -1,0 +1,64 @@
+{
+  "version": "eval-domains-v1",
+  "status": "registered-v1",
+  "source_parent": "tiago-deskclean-20260908T171409Z",
+  "split_unit": "geometric layout family; all groups derive from one source video",
+  "sampler": "independently scrambled Sobol per group; pre-save all proposed parameters; take first N geometrically valid candidates",
+  "initialization": {
+    "standard": "same layout-conditioned initial tool origins and two initial arm IK poses as training; initial posture reveals sampled task geometry, including block bounds",
+    "ik_filter": false,
+    "teacher_rollout": false,
+    "disclosure": "initial robot posture reveals starting task geometry; visual dependence requires counterfactual or image-shuffle evidence",
+    "geometry_acceptance": "all six yaw-rotated blocks inside tabletop with 2mm margin, nonoverlapping block polygons with 1mm margin, block lower face 0 to 2mm above tabletop; computed before robot IK",
+    "reference_robot_state": "agent/out/simulation/trajectory.npz:qpos[0],qvel[0]"
+  },
+  "train_support": {
+    "base_xy_m": [-0.04, 0.04],
+    "base_yaw_deg": [-8, 8],
+    "table_height_m": [0.695, 0.765],
+    "block_mass_kg": 0.008,
+    "block_sliding_friction": 0.45,
+    "key_intensity": [0.45, 0.95],
+    "ambient": [0.12, 0.35],
+    "table_rgb_each_channel": [0.15, 0.70]
+  },
+  "groups": {
+    "validation": {"seed": 42001, "episodes": 40, "candidates": 256, "domain": "id"},
+    "test_id": {"seed": 43001, "episodes": 100, "candidates": 512, "domain": "id"},
+    "test_ood_layout": {
+      "seed": 44001, "episodes": 50, "candidates": 256, "domain": "layout_shell",
+      "axis_selection": "one uniform Sobol coordinate selects an axis; every candidate forces that physical coordinate outside train support",
+      "axes": ["base_x", "base_y", "base_yaw", "table_height"],
+      "base_xy_abs_m": [0.045, 0.060],
+      "base_yaw_abs_deg": [9, 12],
+      "table_height_abs_offset_m": [0.040, 0.050],
+      "other_dimensions": "same continuous ID support; record selected OOD axis for stratified reporting"
+    },
+    "test_ood_visual": {
+      "seed": 45001, "episodes": 50, "candidates": 256, "domain": "visual_shell",
+      "key_intensity": [1.05, 1.35], "ambient": [0.38, 0.46],
+      "table_red": [0.78, 0.92], "other_dimensions": "same continuous ID support"
+    },
+    "test_ood_dynamics": {
+      "seed": 46001, "episodes": 50, "candidates": 256, "domain": "dynamics_shell",
+      "block_mass_kg": [0.0096, 0.0112], "block_sliding_friction": [0.65, 0.85],
+      "friction_note": "block friction exceeds nominal table 0.5 and pan 0.55, so default max-mixing changes block contact friction",
+      "other_dimensions": "same continuous ID support"
+    },
+    "test_counterfactual": {
+      "seed": 47001, "episodes": 20, "candidates": 128, "domain": "counterfactual",
+      "family_id": "counterfactual-nominal-robot",
+      "fixed": "same nominal base, table, tools, robot joint qpos/qvel and visual parameters for all selected scenes",
+      "varied": "block xy and yaw from the independent continuous ID layout sampler",
+      "disclosure": "same robot proprioception can accompany different block layouts; this joint initialization-layout relation differs from the source teacher initializer"
+    }
+  },
+  "reporting": {
+    "no_replacement_after_policy_failure": true,
+    "no_expert_success_filter": true,
+    "no_ik_success_filter": true,
+    "retain_rejected_geometry_proposals": true,
+    "retain_initial_ik_residuals": true,
+    "counterfactual_checks": "identical robot-only qpos/qvel SHA256 within family; distinct block qpos; complete qpos differs because it includes free blocks"
+  }
+}

@@ -1,0 +1,13 @@
+# Linux x86_64 training environment with Python 3.12.
+--extra-index-url https://download.pytorch.org/whl/cu128
+lerobot[training,diffusion]==0.6.1
+datasets==4.8.5
+torch==2.11.0+cu128
+torchvision==0.26.0+cu128
+torchcodec==0.11.0
+numpy==2.2.6
+scipy==1.18.0
+mujoco==3.4.0
+pillow==12.2.0
+imageio-ffmpeg==0.6.0
+loguru==0.7.3

@@ -1,1 +1,6 @@
-/agent/
+agent/
+.venv/
+.venv-il/
+__pycache__/
+*.pyc
+.DS_Store

@@ -1,0 +1,31 @@
+{
+  "scene": "media/warehouse-single.glb",
+  "poster": "media/warehouse-single.jpg",
+  "bytes": 8290256,
+  "alt": "Recorded TIAGo++ manipulation in a warehouse presentation environment",
+  "description": "Recorded accepted augmentation trajectories; warehouse geometry is presentation only.",
+  "views": [
+    {
+      "id": "development-460909-000002",
+      "label": "Tabletop",
+      "target": "1.800m 0.800m 1.300m",
+      "orbit": "45deg 45deg 3m",
+      "source_episode": "/mnt2/zhexi/deskclean-real2sim/agent/out/augmentation-domain-v1/episode-000002"
+    }
+  ],
+  "stations": [],
+  "maxOrbit": "auto 88deg 80m",
+  "duration_s": 8.65,
+  "coordinate_transform": "Blender (x,y,z) -> glTF (x,z,-y)",
+  "sources": [
+    {
+      "path": "/mnt2/zhexi/deskclean-real2sim/agent/out/warehouse-presentation-v1/warehouse.blend",
+      "sha256": "d062947b680738e1bf3bab9bf2cd495af1135bf5d29d6ed0598c85e6dfef1ad6"
+    },
+    {
+      "path": "/mnt2/zhexi/deskclean-real2sim/agent/scripts/warehouse_export.py",
+      "sha256": "1a1275133ee3466146b2d14d6228d533719a9d680473d2185a7583515e83d295"
+    }
+  ],
+  "exposure": 0.65
+}

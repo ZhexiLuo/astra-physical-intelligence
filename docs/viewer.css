@@ -50,19 +50,19 @@
   outline-offset: 3px;
 }
 .scene-viewer button:disabled { cursor: progress; }
-#scene-load { padding: 16px 22px; font-size: 16px; box-shadow: 0 6px 30px #102c2930; }
-#scene-load span { display: block; margin-top: 5px; color: var(--scene-muted); font-size: 11px; }
+.scene-viewer .scene-load { padding: 16px 22px; font-size: 16px; box-shadow: 0 6px 30px #102c2930; }
+.scene-load span { display: block; margin-top: 5px; color: var(--scene-muted); font-size: 11px; }
 .scene-stage.is-loaded .scene-poster, .scene-stage.is-loaded .scene-entry { display: none; }
 .scene-stage.is-loaded model-viewer { opacity: 1; }
 .scene-controls { padding: 20px 22px 0; }
 .scene-controls[hidden] { display: none; }
 .scene-transport { display: flex; align-items: center; gap: 15px; }
-#scene-play { min-width: 72px; }
-#scene-timeline { flex: 1; min-width: 50px; accent-color: #267d69; cursor: pointer; }
-#scene-time { min-width: 105px; text-align: right; font: 12px ui-monospace, monospace; }
+.scene-play { min-width: 72px; }
+.scene-timeline { flex: 1; min-width: 50px; accent-color: #267d69; cursor: pointer; }
+.scene-time { min-width: 105px; text-align: right; font: 12px ui-monospace, monospace; }
 .scene-views { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
 .scene-views [aria-pressed="true"] { background: #e8f2e6; border-color: #aac5b0; }
-#scene-reset { margin-left: auto; }
+.scene-reset { margin-left: auto; }
 .scene-help, .scene-status { color: var(--scene-muted); font-size: 12px; line-height: 1.7; }
 .scene-help { margin: 15px 0 0; }
 .scene-status { margin: 0; padding: 15px 22px 18px; }
@@ -70,8 +70,12 @@
   .scene-stage { height: 380px; }
   .scene-controls { padding: 15px 14px 0; }
   .scene-transport { flex-wrap: wrap; gap: 10px; }
-  #scene-time { min-width: 85px; font-size: 10px; }
+  .scene-time { min-width: 85px; font-size: 10px; }
   .scene-viewer button { padding: 9px 11px; font-size: 12px; }
-  #scene-reset { margin-left: 0; }
+  .scene-reset { margin-left: 0; }
   .scene-status { padding: 12px 14px 15px; }
 }
+
+.scene-station-label { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 18px; font-size: 13px; }
+.scene-stations { padding: 9px 12px; color: var(--scene-ink); border: 1px solid var(--scene-line); background: #fff; max-width: 100%; }
+.scene-stations:focus-visible { outline: 3px solid #75b7a3; outline-offset: 3px; }

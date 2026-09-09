@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "episodes": 8,
+  "matrix_comparisons": 1272,
+  "max_matrix_error": 5.364418029785156e-07,
+  "source_hashes": 31
+}

@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "videos": [
+    {
+      "file": "warehouse-overview-4k.mp4",
+      "frames": 174,
+      "seconds": 8.7,
+      "size": [
+        3840,
+        2160
+      ],
+      "full_decode": true
+    },
+    {
+      "file": "warehouse-detail-4k.mp4",
+      "frames": 174,
+      "seconds": 8.7,
+      "size": [
+        3840,
+        2160
+      ],
+      "full_decode": true
+    },
+    {
+      "file": "augmentation-flash-4k.mp4",
+      "frames": 192,
+      "seconds": 38.4,
+      "size": [
+        3840,
+        2160
+      ],
+      "full_decode": true
+    }
+  ],
+  "distinct_flash_samples": 32
+}

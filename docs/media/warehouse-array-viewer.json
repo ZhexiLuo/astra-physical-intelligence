@@ -1,0 +1,87 @@
+{
+  "scene": "media/warehouse-array.glb",
+  "poster": "media/warehouse-array.jpg",
+  "bytes": 12245404,
+  "alt": "Recorded TIAGo++ manipulation in a warehouse presentation environment",
+  "description": "Recorded accepted augmentation trajectories; warehouse geometry is presentation only.",
+  "views": [
+    {
+      "id": "overview",
+      "label": "Warehouse overview",
+      "target": "0.25m 0.7m -0.3m",
+      "orbit": "-40deg 56deg 20m"
+    }
+  ],
+  "stations": [
+    {
+      "id": "development-460909-000000",
+      "label": "Workstation 01",
+      "target": "-3.400m 0.800m 1.300m",
+      "orbit": "45deg 45deg 3m",
+      "source_episode": "/mnt2/zhexi/deskclean-real2sim/agent/out/augmentation-domain-v1/episode-000000"
+    },
+    {
+      "id": "development-460909-000001",
+      "label": "Workstation 02",
+      "target": "-0.800m 0.800m 1.300m",
+      "orbit": "45deg 45deg 3m",
+      "source_episode": "/mnt2/zhexi/deskclean-real2sim/agent/out/augmentation-domain-v1/episode-000001"
+    },
+    {
+      "id": "development-460909-000002",
+      "label": "Workstation 03",
+      "target": "1.800m 0.800m 1.300m",
+      "orbit": "45deg 45deg 3m",
+      "source_episode": "/mnt2/zhexi/deskclean-real2sim/agent/out/augmentation-domain-v1/episode-000002"
+    },
+    {
+      "id": "development-460909-000005",
+      "label": "Workstation 04",
+      "target": "4.400m 0.800m 1.300m",
+      "orbit": "45deg 45deg 3m",
+      "source_episode": "/mnt2/zhexi/deskclean-real2sim/agent/out/augmentation-domain-v1/episode-000005"
+    },
+    {
+      "id": "development-460909-000008",
+      "label": "Workstation 05",
+      "target": "-3.400m 0.800m -1.300m",
+      "orbit": "45deg 45deg 3m",
+      "source_episode": "/mnt2/zhexi/deskclean-real2sim/agent/out/augmentation-domain-v1/episode-000008"
+    },
+    {
+      "id": "development-460909-000009",
+      "label": "Workstation 06",
+      "target": "-0.800m 0.800m -1.300m",
+      "orbit": "45deg 45deg 3m",
+      "source_episode": "/mnt2/zhexi/deskclean-real2sim/agent/out/augmentation-domain-v1/episode-000009"
+    },
+    {
+      "id": "development-460909-000011",
+      "label": "Workstation 07",
+      "target": "1.800m 0.800m -1.300m",
+      "orbit": "45deg 45deg 3m",
+      "source_episode": "/mnt2/zhexi/deskclean-real2sim/agent/out/augmentation-domain-v1/episode-000011"
+    },
+    {
+      "id": "development-460909-000012",
+      "label": "Workstation 08",
+      "target": "4.400m 0.800m -1.300m",
+      "orbit": "45deg 45deg 3m",
+      "source_episode": "/mnt2/zhexi/deskclean-real2sim/agent/out/augmentation-domain-v1/episode-000012"
+    }
+  ],
+  "maxOrbit": "auto 88deg 80m",
+  "duration_s": 8.65,
+  "coordinate_transform": "Blender (x,y,z) -> glTF (x,z,-y)",
+  "sources": [
+    {
+      "path": "/mnt2/zhexi/deskclean-real2sim/agent/out/warehouse-presentation-v1/warehouse.blend",
+      "sha256": "d062947b680738e1bf3bab9bf2cd495af1135bf5d29d6ed0598c85e6dfef1ad6"
+    },
+    {
+      "path": "/mnt2/zhexi/deskclean-real2sim/agent/scripts/warehouse_export.py",
+      "sha256": "1a1275133ee3466146b2d14d6228d533719a9d680473d2185a7583515e83d295"
+    }
+  ],
+  "exposure": 0.65
+}

@@ -1,0 +1,37 @@
+{
+  "width": 3840,
+  "height": 2160,
+  "videos": [
+    {
+      "file": "warehouse-overview-4k.mp4",
+      "sha256": "0ef4c4033ad13c30b1f3b13bdd76330652d90cd02e5f7f4b7b6257e75f2af758",
+      "frames": 174,
+      "fps": 20,
+      "duration_s": 8.7
+    },
+    {
+      "file": "warehouse-detail-4k.mp4",
+      "sha256": "73f1468447ba6fc80e8b6db5554b3c10734342454c4f94e13f1becbb76b7050e",
+      "frames": 174,
+      "fps": 20,
+      "duration_s": 8.7
+    },
+    {
+      "file": "augmentation-flash-4k.mp4",
+      "sha256": "5190091f4ff73fc401c7bea4931e430e16be82e2c7eed9a7230b93352424692e",
+      "frames": 192,
+      "fps": 5,
+      "duration_s": 38.4
+    }
+  ],
+  "sources_sha256": {
+    "/mnt2/zhexi/deskclean-real2sim/agent/out/warehouse-presentation-v1/tour-4k/render.json": "b3a13373d942524b4ae740f16a961dcae1c359222baa9de97a04041981a568db",
+    "/mnt2/zhexi/deskclean-real2sim/agent/out/warehouse-presentation-v1/flash/manifest.json": "6ddb784a1abd069df05eb16fd975ea8c06a74050b63542ed3a54e82adf007000",
+    "/mnt2/zhexi/deskclean-real2sim/agent/out/warehouse-presentation-v1/warehouse-tour.blend": "8266e2fa1bced7a0b0edef7deb5b97ec72a9a5176c134f4f1a87ce7c0b218386",
+    "/mnt2/zhexi/deskclean-real2sim/agent/out/warehouse-presentation-v1/manifest.json": "f712b62bf6492f248e6e1e3a7c17cfa31f6d373cbd721b6391164959ff1e0dc7",
+    "/mnt2/zhexi/deskclean-real2sim/agent/out/warehouse-presentation-v1/resume-inventory.json": "cbc0f144eff44af62f3df1c36efc2411387a8fe68984075399441d52c110dd6c",
+    "/mnt2/zhexi/deskclean-real2sim/agent/scripts/warehouse_package.py": "4fe09de2091b636f3b3e356c1bed8a28912b7dbad860d5e586fa7445f325b37a",
+    "/mnt2/zhexi/deskclean-real2sim/agent/scripts/warehouse_render.py": "2da180b4d39612013897a4a36e334ee8fd4505cff4522bbad9be44c741c9ed67",
+    "/mnt2/zhexi/deskclean-real2sim/agent/scripts/warehouse_flash.py": "03acb94108e2357e5ebfce30e7a5a1dc6cdd801ef6641acca96df81644a324e3"
+  }
+}

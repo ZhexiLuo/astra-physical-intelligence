@@ -1,0 +1,16 @@
+{
+  "summary": "agent/out/formal-training-curves/summary-v1.json",
+  "summary_sha256": "1fcba4e71b3de879c70a4a0a1609c988607a385613c16fc66ff5b1c62de56c5a",
+  "plot_script_sha256": "e55231940613d1b467c4a657caef27abbd5d80fa130fe59214245c68ccd1a598",
+  "plot_style_sha256": "6e6348d8fc78c69ee8ee59363d9736c92e412642255eb56786c471d410b5412a",
+  "outputs_sha256": {
+    "formal-training-loss.png": "c6ba312f2a053ed5d296529ac6500819fdc10304882b22722f0bcf073f6013dd",
+    "formal-training-loss.svg": "5758649fda5b180e7139d8550972788e92e65610cf56d81caad260901cdba191",
+    "formal-training-throughput.png": "3e380e3edf7b01270998da6281e7f8fa30d44a6bd5fdfd2b297dcca6cfdf822c",
+    "formal-training-throughput.svg": "cbb63ab90443de8f70c0444fa44d075bfb1ce5db62b32dcb70edcdd0131b7b01"
+  },
+  "role": "completed_formal_training",
+  "method_axes": "Separate, unshared y axes",
+  "aggregation": "Equal-weight seed mean and observed min/max; no confidence interval or smoothing.",
+  "throughput_semantics": "100 updates divided by adjacent W&B log timestamps, starting at update 200. Includes intervening logging/checkpoint delays and shared-host contention. Attempt throughput additionally includes initialization and final saving."
+}

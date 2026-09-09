@@ -97,28 +97,15 @@ The physical motion lasts 7.2 s. Its 174 frames at 24 fps produce a 7.25 s video
 
 Sources: [MuJoCo USD exporter](https://mujoco.readthedocs.io/en/3.4.0/python.html#usd-exporter) and [Blender 4.2 Python API](https://docs.blender.org/api/4.2/).
 
-## 7. Preserve the real workspace
+## 7. Inspect the scene and follow the logs
 
-Modeling, simulation, and rendering run through scripts. The actual Blender GUI is used to load scenes, inspect cameras, and play the recorded motion. A continuous 3 fps Xvfb capture records those sessions; the website's highlight edit is cut and accelerated from that recording. Source code, command logs, the full recording, edit intervals, and GUI events preserve the surrounding process.
+Modeling, simulation, and rendering run through scripts. Open the delivered Blender scene to inspect its cameras and play the saved motion. Source code, command logs, GUI events, and artifact hashes document the build; screen recordings are not included.
 
-The GUI control channel uses a main-thread timer to read an atomically replaced Python command file. One command completes before the next is submitted. During development, an unavailable screen context and an asynchronous workspace switch each stopped the timer with the original traceback intact. The recording continued through recovery. These were GUI inspection failures and did not change the physical rollout.
+The GUI control channel uses a main-thread timer to read an atomically replaced Python command file. One command completes before the next is submitted. During development, an unavailable screen context and an asynchronous workspace switch each stopped the timer with the original traceback intact. These were GUI inspection failures and did not change the physical rollout.
 
-To record another session, use Linux with Xvfb and FFmpeg installed. Choose an unused display number and start Xvfb in one terminal:
+For scripted GUI inspection, start Blender on an available display with the included `agent/scripts/blender_control.py`. It reads `DESKCLEAN_CONTROL_DIR`. Create that directory and an initial `command.py` containing `pass`. Submit each command by writing a temporary file and replacing `command.py` atomically. Wait for the matching command timestamp and `done` state in `status.json` before submitting another.
 
-```bash
-Xvfb :117 -screen 0 1280x720x24
-```
-
-Once the display is ready, start the recorder from a second terminal:
-
-```bash
-mkdir -p agent/out/process
-ffmpeg -f x11grab -framerate 3 -video_size 1280x720 -i :117.0 -c:v libx264 -threads 2 agent/out/process/workflow-live.mkv
-```
-
-With capture running, launch Blender from another terminal with `DISPLAY=:117`. The included `agent/scripts/blender_control.py` reads `DESKCLEAN_CONTROL_DIR`. Create that directory and an initial `command.py` containing `pass`. Submit each command by writing a temporary file and replacing `command.py` atomically. Wait for the matching command timestamp and `done` state in `status.json` before submitting another. Stop FFmpeg with SIGINT so it finishes the container.
-
-Final rendering used one A100 GPU and two workers sharing eight logical CPUs, at 1280 × 720 and 48 samples. The Mac was used for source inspection, editing, and lightweight preview. The original recording and replay remain separate artifacts.
+The reference rendering run used one A100 GPU and two workers sharing eight logical CPUs, at 1280 × 720 and 48 samples. The Mac handled source inspection, editing, and lightweight preview.
 
 ## What is in the package?
 

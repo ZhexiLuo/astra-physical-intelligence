@@ -1,0 +1,57 @@
+{
+  "role": "presentation-only-render-comparison",
+  "source_blend_sha256": "c0dd9b7d3c20578df758037e406f80ff4c976d9854d603bdb1c20ff99084d6da",
+  "setting_change": "cycles.denoising_use_gpu: false -> true",
+  "frame": 90,
+  "samples": 48,
+  "resolution": [
+    1280,
+    720
+  ],
+  "cpus": [
+    176,
+    177
+  ],
+  "gpu": "GPU-9c6e816e-ffc7-d5d9-303f-32572816660c",
+  "cameras": [
+    {
+      "camera": "global",
+      "cpu_denoise_render_and_save_s": 10.46,
+      "gpu_denoise_render_and_save_s": 1.56,
+      "ssim": 0.999335,
+      "rgb_mae_8bit": 0.047975260416666665,
+      "rgb_rmse_8bit": 0.2190325556091301,
+      "rgb_max_abs_8bit": 1.0,
+      "baseline_sha256": "f3de93f01b761974d912ce43557d0f23b5c270cf442bbf7d0e154c86e1e1c257",
+      "candidate_sha256": "567bf39cf6afb7925213dbc8e84bb7331da17e950b05a43495921f2a1ae2a1e2"
+    },
+    {
+      "camera": "ego",
+      "cpu_denoise_render_and_save_s": 10.27,
+      "gpu_denoise_render_and_save_s": 1.25,
+      "ssim": 0.999559,
+      "rgb_mae_8bit": 0.037261284722222225,
+      "rgb_rmse_8bit": 0.1930318230816417,
+      "rgb_max_abs_8bit": 1.0,
+      "baseline_sha256": "c464f20a59464a231eb0e5c5dda5a6a0e413adcc1d0305b97d2fe2b884c06802",
+      "candidate_sha256": "70b66100c13e14aaa276a3f91c9295e28881a7091a8ed15c1bb4934c74eac414"
+    },
+    {
+      "camera": "gripper",
+      "cpu_denoise_render_and_save_s": 10.34,
+      "gpu_denoise_render_and_save_s": 1.31,
+      "ssim": 0.999569,
+      "rgb_mae_8bit": 0.0342505787037037,
+      "rgb_rmse_8bit": 0.1850691187197467,
+      "rgb_max_abs_8bit": 1.0,
+      "baseline_sha256": "1725b7ed9dc39442da64f8b78d710141ee77f0f8c68e64d497b51e6417f767b7",
+      "candidate_sha256": "09b425788bedd9d45f1d7b761b2383d6333ddfbc14416cee6d2459d44461ef27"
+    }
+  ],
+  "reported_render_and_save_s": {
+    "cpu": 31.07,
+    "gpu": 4.12
+  },
+  "scope": "Three cameras of one completed training-scene diagnostic; reported Blender render-and-save times, not end-to-end formal throughput. Image differences are measured, not assumed absent.",
+  "reported_time_ratio": 7.54126213592233
+}

@@ -1,0 +1,65 @@
+{
+  "episodes": [
+    {
+      "episode": "episode-000001",
+      "trajectory_sha256": "daa566023e65560d227bbcb2e8ebbcfc9e0bdf2cddb0141a81704e6ee8945061",
+      "renderer": "Blender",
+      "indices": [
+        0,
+        73,
+        146
+      ],
+      "timestamps": [
+        0.0,
+        3.6500000000000004,
+        7.300000000000001
+      ]
+    },
+    {
+      "episode": "episode-000002",
+      "trajectory_sha256": "e184a45120e1dc1017352eba6b0771874a9a74fe8c75fd6b001f18c58c0150f4",
+      "renderer": "Blender",
+      "indices": [
+        0,
+        68,
+        135
+      ],
+      "timestamps": [
+        0.0,
+        3.4000000000000004,
+        6.75
+      ]
+    },
+    {
+      "episode": "episode-000003",
+      "trajectory_sha256": "44ceafbed8f8e2acc940f0a22c11a1e71b885beec9bf0c02900faa44bb7563c9",
+      "renderer": "Blender",
+      "indices": [
+        0,
+        77,
+        154
+      ],
+      "timestamps": [
+        0.0,
+        3.85,
+        7.7
+      ]
+    },
+    {
+      "episode": "episode-000004",
+      "trajectory_sha256": "d6ba254395821879b87efa9a1ae4eaa559534c5e3d200f879648bfc0fee31e90",
+      "renderer": "Blender",
+      "indices": [
+        0,
+        75,
+        149
+      ],
+      "timestamps": [
+        0.0,
+        3.75,
+        7.45
+      ]
+    }
+  ],
+  "image_sha256": "a5405197341a809428025214f95687326a6254e4fd01ce1af00a19b845d267f3"
+}

@@ -1,0 +1,66 @@
+{
+  "role": "registered_training_physics; not learned policy evaluation",
+  "count_proposed": 512,
+  "count_completed": 512,
+  "count_success": 303,
+  "count_training_selected": 256,
+  "success_rate_all_candidates": 0.591796875,
+  "count_initial_geometry_valid": 429,
+  "failed_check_counts_nonexclusive": {
+    "collected_all": 65,
+    "final_hold_collected": 65,
+    "collection_gate": 63,
+    "lifted_pan": 63,
+    "global_penetration": 151,
+    "initial_nonoverlap": 83,
+    "settled_blocks": 28,
+    "pan_penetration": 63,
+    "robot_self_penetration": 23,
+    "pan_lip_table_gap": 33,
+    "pan_plane_tilt": 8,
+    "physical_contacts": 6,
+    "pan_target_orientation": 1,
+    "ik_position": 1
+  },
+  "collected_histogram_all": {
+    "1": 11,
+    "6": 447,
+    "0": 23,
+    "4": 9,
+    "2": 7,
+    "3": 13,
+    "5": 2
+  },
+  "base_pose_min": [
+    -0.03984956242144108,
+    -0.03984699569642544,
+    -0.13924712344529888
+  ],
+  "base_pose_max": [
+    0.039975234493613246,
+    0.039962357431650164,
+    0.13955069572154077
+  ],
+  "table_height_minmax_m": [
+    0.6950858890730888,
+    0.7649925705231726
+  ],
+  "max_replay_error_all": 0.0,
+  "accepted_max_penetration_m": 0.0014701931461846265,
+  "accepted_max_forbidden_collision_m": 0.0,
+  "timing_median_seconds": {
+    "compile": 0.10966716008260846,
+    "ik": 3.8578373938798904,
+    "rollout": 4.219031137879938,
+    "replay": 0.9552681464701891
+  },
+  "audit_passed": true,
+  "inputs_sha256": {
+    "proposed.jsonl": "28b5fc9ba106f91ffe7cd91d0ce5d6854046288fa2c72838040d6845686c8f19",
+    "attempts.jsonl": "05855badf3f3229dcaa1f96ed22692d8aa7edaf7368e3166cb7c0f2b9851c38c",
+    "successful.json": "cae6f5be049e6ca6f0221a2082de8a3e95c294f7b93aeb5aeddf3ec5d6c66f28",
+    "training-episodes.json": "e5354a0df87b3f878198da27a4cebff3da91b8a4c2bb695376ddcdcb8bf42148",
+    "training-selection.json": "9556ea612831427d184cdcddc0a3744e7dc3ba83a56d8abf482665cfa1a50e6c"
+  },
+  "unique_nominal_action_sequences": 512
+}

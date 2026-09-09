@@ -1,0 +1,20 @@
+{
+  "frames": 181,
+  "fps": 20,
+  "duration_s": 9.05,
+  "output_sha256": "d62c7f82915e2401f66b50cd47c89cc2428867bd01d113d87c4e136ce5a55b82",
+  "every_frame_timestamps_match": true,
+  "decoded_without_errors": true,
+  "frame_alignment_checks": [
+    {
+      "source": "float32",
+      "frames": 181,
+      "minimum_frame_ssim": 0.994997
+    },
+    {
+      "source": "float64",
+      "frames": 181,
+      "minimum_frame_ssim": 0.993855
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "file": "workstation-array.mp4",
+    "decoded": true,
+    "codec_name": "h264",
+    "width": 1280,
+    "height": 720,
+    "avg_frame_rate": "20/1",
+    "duration": "8.750000",
+    "nb_read_frames": "175"
+  },
+  {
+    "file": "world-trajectories.mp4",
+    "decoded": true,
+    "codec_name": "h264",
+    "width": 1280,
+    "height": 720,
+    "avg_frame_rate": "20/1",
+    "duration": "15.100000",
+    "nb_read_frames": "302"
+  },
+  {
+    "file": "augmentation-tour.mp4",
+    "decoded": true,
+    "codec_name": "h264",
+    "width": 1280,
+    "height": 720,
+    "avg_frame_rate": "20/1",
+    "duration": "23.850000",
+    "nb_read_frames": "477"
+  }
+]

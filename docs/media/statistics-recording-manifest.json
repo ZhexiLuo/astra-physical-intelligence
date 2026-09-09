@@ -1,0 +1,34 @@
+{
+  "raw_file": "/Users/zhexiluo/Documents/ChatGPT/gpt6-ultra-real2sim/agent/out/statistics-fix-process/statistics-live.mkv",
+  "raw_sha256": "df0690c2cc5e992894dd6c882305f1116a3705ecc8d761d7d3284e7a67e2d72e",
+  "file": "statistics-workflow-full.mp4",
+  "sha256": "8fa3c86a582163e0dd089769c75a631e9c2e28726ea421ea1314124e66d1305f",
+  "stream_sha256": "SHA256=c713e01d9e0abe742b847301b23d16904e2686696b8203ed7f5cb57471ea29be",
+  "duration_s": 1294.666,
+  "frames": 3884,
+  "fps": 3,
+  "resolution": [
+    1280,
+    720
+  ],
+  "stream_unchanged": true,
+  "full_decode_passed": true,
+  "all_frame_timestamps_unchanged": true,
+  "max_timestamp_quantization_error_s": 0.00033333333340124227,
+  "container_average_frame_rates": [
+    "3/1",
+    "3884000/1294667"
+  ],
+  "events_sha256": "b51fb9bd7895dce9d92bb6efa3a4289a40c7466e68463b1df38d611a226b078d",
+  "pids_sha256": "b3a4ca59c6499fe5b548e8c12f2fb7c242322e700259a4473af0ded106ad784b",
+  "continuous_segments": [
+    {
+      "start_s": 0,
+      "end_s": 1294.666,
+      "speed_multiplier": 1
+    }
+  ],
+  "coverage": "Actual visible terminal activity and the final comparison-image review on dedicated remote display :118. This covers a current read-only statistics diagnostic inspection, corrected 2,000-update training logs, and the subsequent ACT and Diffusion pilot-result checks. Background code editing and other CLI work are documented separately in workflow logs.",
+  "result_context": "Corrected ACT collected 6/6 blocks but failed the lift check; corrected Diffusion achieved 0/4 task and physical success. Formal 50,000-update training was still running when this recording ended.",
+  "notes": "One uninterrupted recording; no trimming or speed changes. Event offsets use recorder process launch and are approximate. Process shutdown after recording ends is outside the video."
+}

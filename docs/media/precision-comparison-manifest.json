@@ -1,0 +1,236 @@
+{
+  "sources": [
+    {
+      "precision": "float32",
+      "source_directory": "/mnt2/zhexi/deskclean-real2sim/agent/out/imitation/eval/pilot/nominal-act-2000",
+      "sha256": {
+        "rollout.mp4": "1ad9fa8b902bf0c5c8a83c371d93bbe1d5fea2b02024bb41fa04f0c1d27282ce",
+        "metrics.json": "0a4d0b35f16ef2b6b3d4e92936b6cf0a0939ec84b5293b2a80a8425d248613d5",
+        "evaluation.json": "b8817433bb7e616b972042ed8ff16843f6c7cc17cf663cddacf3770c3b085ecd"
+      },
+      "metrics": {
+        "duration": 8.999999999999675,
+        "logical_policy_hz": 20,
+        "max_penetration_m": {
+          "all": 0.00018266076827378776,
+          "block_dustpan": 0.0,
+          "robot_self": 0.0
+        },
+        "forbidden_collision_penetration_m": 0.0,
+        "interactions": {
+          "brush_block_contacts": 0,
+          "brush_block_normal_impulse_ns": 0.0,
+          "dustpan_block_contacts": 0,
+          "dustpan_block_normal_impulse_ns": 0.0
+        },
+        "render_seconds_mean": 0.47978530675996073,
+        "render_seconds_p95": 0.5231608590111136,
+        "inference_seconds_mean": 0.010106940676147739,
+        "inference_seconds_p95": 0.024709165701642624,
+        "block_count": 6,
+        "blocks_in_dustpan": 0,
+        "blocks_local_positions": [
+          [
+            -0.05758350414566319,
+            -0.09745752428688942,
+            0.009869850178061206
+          ],
+          [
+            -0.0025936181878751844,
+            -0.07942667188023601,
+            0.009898201995554185
+          ],
+          [
+            0.05242265402613292,
+            -0.10839575413035014,
+            0.00985275709793712
+          ],
+          [
+            -0.03155319211885359,
+            -0.1514428526087849,
+            0.009785104651725919
+          ],
+          [
+            0.026453535657366682,
+            -0.1634102742702349,
+            0.00976635705092822
+          ],
+          [
+            0.0674451080505453,
+            -0.14838727740270108,
+            0.009789975722697368
+          ]
+        ],
+        "warnings": {},
+        "success": false,
+        "task_success": false,
+        "physical_success": false,
+        "physical_checks": {
+          "no_warnings": true,
+          "pan_lifted": false,
+          "global_penetration": true,
+          "pan_penetration": true,
+          "robot_self_penetration": true,
+          "forbidden_collision": true
+        },
+        "final_pan_height_m": 0.0009672609210443772,
+        "success_definition": "final six-block cavity inclusion; physical_success adds shared physical checks",
+        "sampling_seed": 2000,
+        "episode_wall_seconds": 99.16532798763365,
+        "simulation_seconds_per_wall_second": 0.09075752768267972,
+        "episode": "/mnt2/zhexi/deskclean-real2sim/agent/out/augmentation-nominal-v2/episode-000000",
+        "observation_mode": "live",
+        "scene_sha256": "ed0f35b6957c740a4db5bd521595f4b90086dbbc8d8126a509a9d67c4444e01f",
+        "sensor_audit_sha256": "6086ea10c298aed7fb02ac0e093b8f88f327ef494a3f9d7d467068d0f4c23b41",
+        "initialization_trajectory_sha256": "9e7201efa5cc56ffa0366593c8000d663ee59bac52dea908132187694edf9dd2",
+        "metadata_sha256": "ee31569aab9069a312549eba32956f1fd8b9cf903e1279d823562fb08fbfcdd7"
+      }
+    },
+    {
+      "precision": "float64",
+      "source_directory": "/mnt2/zhexi/deskclean-real2sim/agent/out/imitation/eval/pilot/nominal-act-2000-stats64",
+      "sha256": {
+        "rollout.mp4": "cfe183487d19e2fb61d99987f549fb33932b689d44a5b7cded62192423f94f0d",
+        "metrics.json": "142785eb6a882bbeef43969d84c5c6b3d8bad22d05243ae23d51a4b920b8dcf8",
+        "evaluation.json": "f467258479cf930f12c316529e15611b520d8ee3582d80e5939b0f0a89e2b163"
+      },
+      "metrics": {
+        "duration": 8.999999999999675,
+        "logical_policy_hz": 20,
+        "max_penetration_m": {
+          "all": 0.0006669253563515964,
+          "block_dustpan": 0.0006669253563515964,
+          "robot_self": 0.0
+        },
+        "forbidden_collision_penetration_m": 0.0,
+        "interactions": {
+          "brush_block_contacts": 3394,
+          "brush_block_normal_impulse_ns": 0.5805181878353802,
+          "dustpan_block_contacts": 9262,
+          "dustpan_block_normal_impulse_ns": 1.7187950038205095
+        },
+        "render_seconds_mean": 0.4837219459853696,
+        "render_seconds_p95": 0.5178291806951165,
+        "inference_seconds_mean": 0.00969740293092198,
+        "inference_seconds_p95": 0.023783045494928955,
+        "block_count": 6,
+        "blocks_in_dustpan": 6,
+        "blocks_local_positions": [
+          [
+            -0.050574371484121444,
+            0.09445881127874135,
+            0.0155466153132276
+          ],
+          [
+            0.0031746284818716186,
+            0.0945490312148713,
+            0.0155501465689971
+          ],
+          [
+            0.05748744306917668,
+            0.09630350817794807,
+            0.015596707702377827
+          ],
+          [
+            -0.023494667073188986,
+            0.0953631093022748,
+            0.015574628081569604
+          ],
+          [
+            0.028716500911513485,
+            0.09336663609885117,
+            0.015514981818757935
+          ],
+          [
+            0.08821042182247404,
+            0.09527235239503523,
+            0.015565790058337246
+          ]
+        ],
+        "warnings": {},
+        "success": true,
+        "task_success": true,
+        "physical_success": false,
+        "physical_checks": {
+          "no_warnings": true,
+          "pan_lifted": false,
+          "global_penetration": true,
+          "pan_penetration": true,
+          "robot_self_penetration": true,
+          "forbidden_collision": true
+        },
+        "final_pan_height_m": 0.0010565931597219524,
+        "success_definition": "final six-block cavity inclusion; physical_success adds shared physical checks",
+        "sampling_seed": 2000,
+        "episode_wall_seconds": 98.90857030730695,
+        "simulation_seconds_per_wall_second": 0.09099312599542037,
+        "episode": "/mnt2/zhexi/deskclean-real2sim/agent/out/augmentation-nominal-v2/episode-000000",
+        "observation_mode": "live",
+        "scene_sha256": "ed0f35b6957c740a4db5bd521595f4b90086dbbc8d8126a509a9d67c4444e01f",
+        "sensor_audit_sha256": "1362089c83cd1db59a97fd2808657bf41a79b97ad448cb8a1f147d9c898d4fb8",
+        "initialization_trajectory_sha256": "9e7201efa5cc56ffa0366593c8000d663ee59bac52dea908132187694edf9dd2",
+        "metadata_sha256": "ee31569aab9069a312549eba32956f1fd8b9cf903e1279d823562fb08fbfcdd7"
+      }
+    }
+  ],
+  "output_sha256": "d62c7f82915e2401f66b50cd47c89cc2428867bd01d113d87c4e136ce5a55b82",
+  "script_sha256": "0e238a5feb8f80ac8a0afc525342e051e3e7ff4055d3a9c799dcf2a602428bda",
+  "command": [
+    "/home/zhexi/miniconda3/envs/retargeting/lib/python3.12/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2",
+    "-nostdin",
+    "-hide_banner",
+    "-n",
+    "-threads",
+    "1",
+    "-loop",
+    "1",
+    "-framerate",
+    "20",
+    "-i",
+    "/mnt2/zhexi/deskclean-real2sim/agent/out/precision-comparison/labels.png",
+    "-threads",
+    "1",
+    "-i",
+    "/mnt2/zhexi/deskclean-real2sim/agent/out/precision-comparison/sources/float32/rollout.mp4",
+    "-threads",
+    "1",
+    "-i",
+    "/mnt2/zhexi/deskclean-real2sim/agent/out/precision-comparison/sources/float64/rollout.mp4",
+    "-filter_complex_threads",
+    "2",
+    "-filter_complex",
+    "[1:v]scale=608:304:flags=lanczos,setpts=PTS-STARTPTS[left];[2:v]scale=608:304:flags=lanczos,setpts=PTS-STARTPTS[right];[0:v][left]overlay=24:190:shortest=1[half];[half][right]overlay=648:190:shortest=1[out]",
+    "-map",
+    "[out]",
+    "-an",
+    "-frames:v",
+    "181",
+    "-fps_mode",
+    "passthrough",
+    "-c:v",
+    "libx264",
+    "-crf",
+    "16",
+    "-preset",
+    "medium",
+    "-pix_fmt",
+    "yuv420p",
+    "-threads",
+    "4",
+    "-movflags",
+    "+faststart",
+    "/mnt2/zhexi/deskclean-real2sim/agent/out/precision-comparison/precision-comparison.mp4"
+  ],
+  "resolution": [
+    1280,
+    720
+  ],
+  "frames": 181,
+  "fps": 20,
+  "duration_s": 9.05,
+  "training_seed": 11,
+  "updates": 2000,
+  "label": "Same training data \u00b7 seed 11 \u00b7 2,000 updates",
+  "timing": "Both complete 181-frame rollouts aligned at their first frame; no trimming, interpolation, or speed changes.",
+  "scope": "Two separate live closed-loop evaluations. Six blocks collected after the statistics fix; lift remains incomplete and physical_success is false."
+}

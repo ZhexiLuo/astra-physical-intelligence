@@ -1,0 +1,139 @@
+{
+  "role": "training-scene throughput diagnostic",
+  "source_sha256": {
+    "agent/out/live-pipeline-probe-2x4/summary.json": "32aee559f7fbfb85126b19012833a6d01e5908450e4b7751250658c696261cf2",
+    "agent/out/live-pipeline-probe-4x2/summary.json": "536d49719b21e80ea5feb986461921dc804ae3cf7343fb5230667f1091f12708"
+  },
+  "measurements": [
+    {
+      "status": "completed",
+      "episodes": 2,
+      "dual_camera_pairs": 122,
+      "complete_wall_seconds": 47.956321001052856,
+      "complete_wall_pairs_per_second": 2.543981636900828,
+      "policy_window_seconds": 46.883604764938354,
+      "policy_window_pairs_per_second": 2.6021889872093844,
+      "sampled_device_peak_mib": 13942,
+      "sampled_probe_process_peak_mib": 7540,
+      "external_gpu_pids": [
+        3963493
+      ],
+      "baseline_gpu": {
+        "query_started_unix": 1788910432.3185568,
+        "unix": 1788910432.426667,
+        "uuid": "GPU-6f9bcfc2-5e90-845a-c0a0-88bf4e33b06c",
+        "used_mib": 6377,
+        "total_mib": 81920,
+        "utilization_percent": 0,
+        "compute": [
+          {
+            "pid": 3963493,
+            "used_mib": 6366
+          }
+        ]
+      },
+      "gpu_sample_count": 77,
+      "probe_pids": [
+        3979821,
+        3979823,
+        3980372,
+        3980376
+      ],
+      "background_context": "12 formal training jobs; GPU4 also hosts augmented DP training",
+      "output_sources_sha256": {
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-2x4/worker-00/results/evaluation.json": "975d7b91b1c1a492b3bd83721e67c178ceae4a74c9706465835b6ece647ffb19",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-2x4/worker-00/results/results.jsonl": "31aece0ebb91cb090c94a5087d4649ddf95b068facd54955df724af7c4feec9c",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-2x4/worker-00/results/00000/metrics.json": "86dfa3bf86a1721e660b3eede3e4eeb3b0c8c3a465d4fa6e13b070686b2ea9a6",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-2x4/worker-00/results/00000/sensor-audit.json": "e187423a60620f53e0fcf8b7e7bad0c2a526620c7c72baeee721e0e86873b8a7",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-2x4/worker-01/results/evaluation.json": "9085fa6eb7463849887301f894edf3eff0d717e904d6985898a51a14b91d6f1b",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-2x4/worker-01/results/results.jsonl": "cba0bd714a1fe77d098359c87892710377771ed727a20fb23a5068e25a943b7b",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-2x4/worker-01/results/00000/metrics.json": "caaa856c00e2a858ab7bb670ee0dd49ba9049f39ff949b57c1ada534d1b1e6cb",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-2x4/worker-01/results/00000/sensor-audit.json": "0d754efdc77072051b86c9864228e02d4641910de9f51c70a4d20e525b2470e7",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-2x4/worker-00/sensor.json": "9a76c4ea4551f1e29b1faa94482773e094c377df26eee234c2a6e9c0e6298293",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-2x4/worker-00/segment-000.json": "1a4895728bbc279205f69c75f00f90d73ce0f12a5320d13dcab76e9213c7635c",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-2x4/worker-01/sensor.json": "f40bde47b4d64ab426062e240608188aee018c71226f820760770a6a533b3164",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-2x4/worker-01/segment-000.json": "d795cc71c31c156af6d1fe96bd0378e3a1186bc0cbbb1e7902016fab0f57891b"
+      },
+      "interpretation": "Sampled memory peaks and complete live pipeline throughput; no success filtering or idle-GPU extrapolation.",
+      "plan_sha256": "d12214619bd17d945b85da1c7952f108643847e6c41a8f05006b406c7db6e7af",
+      "gpu_samples_sha256": "7d3665e6558236bdf66410cbbd32dd7210d9b305efbae3bae089f72cf7a2d23c"
+    },
+    {
+      "status": "completed",
+      "episodes": 4,
+      "dual_camera_pairs": 244,
+      "complete_wall_seconds": 62.76372742652893,
+      "complete_wall_pairs_per_second": 3.887595750039317,
+      "policy_window_seconds": 61.69554281234741,
+      "policy_window_pairs_per_second": 3.9549048258177764,
+      "sampled_device_peak_mib": 21504,
+      "sampled_probe_process_peak_mib": 15082,
+      "external_gpu_pids": [
+        3963493
+      ],
+      "baseline_gpu": {
+        "query_started_unix": 1788910587.6824255,
+        "unix": 1788910587.8167675,
+        "uuid": "GPU-6f9bcfc2-5e90-845a-c0a0-88bf4e33b06c",
+        "used_mib": 6377,
+        "total_mib": 81920,
+        "utilization_percent": 0,
+        "compute": [
+          {
+            "pid": 3963493,
+            "used_mib": 6366
+          }
+        ]
+      },
+      "gpu_sample_count": 99,
+      "probe_pids": [
+        3982152,
+        3982154,
+        3982156,
+        3982158,
+        3983230,
+        3983239,
+        3983241,
+        3983252
+      ],
+      "background_context": "12 formal training jobs; GPU4 also hosts augmented DP training",
+      "output_sources_sha256": {
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-4x2/worker-00/results/evaluation.json": "ae27e12aefbc133a1837170e5bb48f5c9659d25cbf7486c824b9add9f5a2fad2",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-4x2/worker-00/results/results.jsonl": "1a2501c0f35bdf8c0e156067bc19a85c55c6a27bfb7e35fc9af0eff31d49f623",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-4x2/worker-00/results/00000/metrics.json": "19196d5a1761dcff389bbd7b57966368df4f4b75378d24f3b0d7be4c82b0d639",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-4x2/worker-00/results/00000/sensor-audit.json": "7de999387a57309a76858fbf1cccb14a962627b1229d53efff7027c2aa4d80a9",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-4x2/worker-01/results/evaluation.json": "f3898e2642b2dba522e87d820448bc4cf0e1554973fa212aa81336d365a27fd2",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-4x2/worker-01/results/results.jsonl": "92eb8b0cfbc1f455fed30ec9892332694f1be0347005345fa78ddd00f6a48a84",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-4x2/worker-01/results/00000/metrics.json": "2c7d4c31191c6c36ab98140f15a8799df29a1a528fea7ab5af1e7741c1a213d5",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-4x2/worker-01/results/00000/sensor-audit.json": "5ebf77cfd777dcb1399ee1feac514e3a80c3026e6de6d272b757dcdf1b5d55dc",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-4x2/worker-02/results/evaluation.json": "3109419cab2f483caed513e19c5d1358022b287f0578b8320776eecc9df59bd2",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-4x2/worker-02/results/results.jsonl": "be2daae88e060052071ecf3189d86d8028e5255df815024ca98dbf4b9483497c",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-4x2/worker-02/results/00000/metrics.json": "56afa15be512b635f6e6cb56a134e74be3dece1bb343f952fc4ee5624f7ee5bb",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-4x2/worker-02/results/00000/sensor-audit.json": "8f862379606137d90b61ac724c7c0e514b31cca319a165a6a3e8ef7646a8be55",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-4x2/worker-03/results/evaluation.json": "9753062e57268cd74781c0d87bf85cd3320f547b36888ce0f358a236d7cd1ab3",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-4x2/worker-03/results/results.jsonl": "45f0630d454b569b73f9480f467a7e2a83d78d379ac350fd865c87c0ec22bf69",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-4x2/worker-03/results/00000/metrics.json": "989e8f504cf2cd702a60ce887b73ea8be4c85f48de7a6a462a498aa56a733338",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-4x2/worker-03/results/00000/sensor-audit.json": "47295e9a8f7862807c256d60ce8a175881683b95e05aa97d4ce47e2ccdd99802",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-4x2/worker-00/sensor.json": "ebbc314b87ca27db75f49983a4de38fcfc02d443d2ac2e099ced0eeb9134a186",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-4x2/worker-00/segment-000.json": "5f8e5904708edf58f73cd62a444faab06fc8861f753f0bbc7e3b86c7bcecf77d",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-4x2/worker-01/sensor.json": "d38a8e07ae8ac6a0b4a0c3edbb9cdf8d025566449a40ae75a9c3962f58456196",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-4x2/worker-01/segment-000.json": "240e4e63bee9555ab6b3e7d71d52bf21eeeb0a99dc1c48db416539fa0b185d24",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-4x2/worker-02/sensor.json": "84e270db76995d6164f71c5ad8331d9122d45c3c9fde6a9094245d4aa92f7341",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-4x2/worker-02/segment-000.json": "63943fc34363bd20462a8a0dd44d54589ba1ed25ad4db7fac981315ded871526",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-4x2/worker-03/sensor.json": "7fbfca3c9de764e3f35642f85c9d060e5d0e0bd275333c6e832128ced3b0bc55",
+        "/mnt2/zhexi/deskclean-real2sim/agent/out/live-pipeline-probe-4x2/worker-03/segment-000.json": "655b3cf0c9bc6a37bef0bd26625816be7d650f1cbfc2b7d2ba536305afd57874"
+      },
+      "interpretation": "Sampled memory peaks and complete live pipeline throughput; no success filtering or idle-GPU extrapolation.",
+      "plan_sha256": "fa451ff242f1e794569a8a23cf7afc8154676164b0c6dceeca14af7be8929018",
+      "gpu_samples_sha256": "46c965b6247f6cb164ec99f5b97dda3ccaed1a2b9440270989efb2f1b219ab17"
+    }
+  ],
+  "conditions": {
+    "cpus": 8,
+    "physics_steps_per_worker": 1500,
+    "control_steps_per_worker": 60,
+    "dual_camera_pairs_per_worker": 61,
+    "checkpoint": "four-diffusion-2000-stats64",
+    "background": "Same A100 GPU4 concurrently training augmented Diffusion Policy"
+  }
+}

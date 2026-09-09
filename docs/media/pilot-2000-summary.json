@@ -1,0 +1,716 @@
+{
+  "schema_version": 1,
+  "training": [
+    {
+      "id": "nominal-act-2000-spawn",
+      "method": "act",
+      "condition": "nominal",
+      "seed": 11,
+      "role": "diagnostic_invalid_image_statistics",
+      "audit": {
+        "status": "completed",
+        "started_unix": 1788902740.9945903,
+        "arguments": {
+          "dataset": "agent/out/imitation/datasets/nominal-blender-v2",
+          "output": "agent/out/imitation/train/pilot/nominal-act-2000-spawn",
+          "repo_id": "local/deskclean-nominal",
+          "policy": "act",
+          "seed": 11,
+          "steps": 2000,
+          "save_freq": 1000,
+          "batch_size": 32,
+          "workers": 4,
+          "device": "cuda"
+        },
+        "packages": {
+          "lerobot": "0.6.1",
+          "datasets": "4.8.5",
+          "torch": "2.11.0+cu128",
+          "torchvision": "0.26.0+cu128",
+          "diffusers": "0.39.0",
+          "numpy": "2.2.6"
+        },
+        "dataset_manifest_sha256": "16479ad42901d480208c5ac34b869985c3edeedf5ddf2c36ced9ae7605aa4fb0",
+        "source_sha256": {
+          "train_policy.py": "41abb5318f50b69d56cef6ef16837f3a06557a32130c897a0d92c7625568fbe1",
+          "policy_data.py": "8e4afb89ddcf5f021bbe66019643c89f3eb3eaded47c9ad7eb12e172f0caccfc",
+          "lerobot_io.py": "f178f5c50ebb9e806bcbede2a3542639edeeb5e9639bf96a3b8e65beb51d15e4"
+        },
+        "dataset_query": "pickleable ProjectedDatasetReader; LeRobot 0.6.1 / datasets 4.8.5",
+        "dataloader_multiprocessing_context": "spawn",
+        "official_dataset_reader_sha256": "3a477dae6aa887449f09be25b385485b065861d13c5448b9369a0ba09f01bb5d",
+        "backbone_initialization": "random; no pretrained weights",
+        "finished_unix": 1788903013.5651293
+      },
+      "points": [
+        {
+          "step": 100,
+          "loss": 14.969085254669189,
+          "update_s": 0.08143777534365654,
+          "data_s": 0.10899682597257197,
+          "timestamp_unix": 1788902762.3180761
+        },
+        {
+          "step": 200,
+          "loss": 3.819384253025055,
+          "update_s": 0.0773036789149046,
+          "data_s": 0.051370818465948105,
+          "timestamp_unix": 1788902775.2722425
+        },
+        {
+          "step": 300,
+          "loss": 2.9361789727211,
+          "update_s": 0.07750357655808329,
+          "data_s": 0.052498968131840226,
+          "timestamp_unix": 1788902788.361216
+        },
+        {
+          "step": 400,
+          "loss": 2.4853053665161133,
+          "update_s": 0.07746340359561145,
+          "data_s": 0.0535507904458791,
+          "timestamp_unix": 1788902801.5500035
+        },
+        {
+          "step": 500,
+          "loss": 2.2206408619880675,
+          "update_s": 0.0776257057953626,
+          "data_s": 0.05317814376205206,
+          "timestamp_unix": 1788902814.7140098
+        },
+        {
+          "step": 600,
+          "loss": 2.0207775807380677,
+          "update_s": 0.07532122150994837,
+          "data_s": 0.05284741207957268,
+          "timestamp_unix": 1788902827.6196978
+        },
+        {
+          "step": 700,
+          "loss": 1.8709159898757934,
+          "update_s": 0.07822706974111497,
+          "data_s": 0.053815649431198834,
+          "timestamp_unix": 1788902840.9074824
+        },
+        {
+          "step": 800,
+          "loss": 1.7275464165210723,
+          "update_s": 0.07645915193483234,
+          "data_s": 0.0540462813526392,
+          "timestamp_unix": 1788902854.0412395
+        },
+        {
+          "step": 900,
+          "loss": 1.6154496479034424,
+          "update_s": 0.07633545584976673,
+          "data_s": 0.05285101105459034,
+          "timestamp_unix": 1788902867.047615
+        },
+        {
+          "step": 1000,
+          "loss": 1.4988546514511107,
+          "update_s": 0.07774263300932943,
+          "data_s": 0.05427106123417616,
+          "timestamp_unix": 1788902880.336375
+        },
+        {
+          "step": 1100,
+          "loss": 1.4026904702186584,
+          "update_s": 0.07691629002802074,
+          "data_s": 0.05314977538771928,
+          "timestamp_unix": 1788902893.9060233
+        },
+        {
+          "step": 1200,
+          "loss": 1.342566522359848,
+          "update_s": 0.07736223646439612,
+          "data_s": 0.05348589787259698,
+          "timestamp_unix": 1788902907.076357
+        },
+        {
+          "step": 1300,
+          "loss": 1.265599080324173,
+          "update_s": 0.07691976848058403,
+          "data_s": 0.053885392127558586,
+          "timestamp_unix": 1788902920.2398086
+        },
+        {
+          "step": 1400,
+          "loss": 1.1742339468002319,
+          "update_s": 0.0777719394210726,
+          "data_s": 0.052871264433488246,
+          "timestamp_unix": 1788902933.3918674
+        },
+        {
+          "step": 1500,
+          "loss": 1.1044671577215195,
+          "update_s": 0.07594437767751515,
+          "data_s": 0.05356748441234231,
+          "timestamp_unix": 1788902946.4294817
+        },
+        {
+          "step": 1600,
+          "loss": 1.0323010444641114,
+          "update_s": 0.07697051859460771,
+          "data_s": 0.055063889781013134,
+          "timestamp_unix": 1788902959.7153254
+        },
+        {
+          "step": 1700,
+          "loss": 0.9635425817966461,
+          "update_s": 0.07777887376956642,
+          "data_s": 0.05425554532557726,
+          "timestamp_unix": 1788902973.005471
+        },
+        {
+          "step": 1800,
+          "loss": 0.9073268193006515,
+          "update_s": 0.0772686664853245,
+          "data_s": 0.05239168261177838,
+          "timestamp_unix": 1788902986.055494
+        },
+        {
+          "step": 1900,
+          "loss": 0.842970460653305,
+          "update_s": 0.07635333539918066,
+          "data_s": 0.05238326022401452,
+          "timestamp_unix": 1788902999.0193322
+        },
+        {
+          "step": 2000,
+          "loss": 0.7927343398332596,
+          "update_s": 0.07711749169044196,
+          "data_s": 0.05338753079995513,
+          "timestamp_unix": 1788903012.1627011
+        }
+      ],
+      "nominal_log_interval_updates": 100,
+      "point_semantics": "loss, update_s and data_s are means since the previous log reset"
+    },
+    {
+      "id": "four-diffusion-2000-spawn",
+      "method": "diffusion",
+      "condition": "pilot-four",
+      "seed": 11,
+      "role": "diagnostic_invalid_image_statistics",
+      "audit": {
+        "status": "completed",
+        "started_unix": 1788902741.8116117,
+        "arguments": {
+          "dataset": "agent/out/imitation/datasets/pilot-four-blender-v2",
+          "output": "agent/out/imitation/train/pilot/four-diffusion-2000-spawn",
+          "repo_id": "local/deskclean-pilot-four",
+          "policy": "diffusion",
+          "seed": 11,
+          "steps": 2000,
+          "save_freq": 1000,
+          "batch_size": 32,
+          "workers": 4,
+          "device": "cuda"
+        },
+        "packages": {
+          "lerobot": "0.6.1",
+          "datasets": "4.8.5",
+          "torch": "2.11.0+cu128",
+          "torchvision": "0.26.0+cu128",
+          "diffusers": "0.39.0",
+          "numpy": "2.2.6"
+        },
+        "dataset_manifest_sha256": "b07ece4b3a7cd6bab9f51a3c4205a84fe44151cc5d0252774d74f6069ab64e50",
+        "source_sha256": {
+          "train_policy.py": "41abb5318f50b69d56cef6ef16837f3a06557a32130c897a0d92c7625568fbe1",
+          "policy_data.py": "8e4afb89ddcf5f021bbe66019643c89f3eb3eaded47c9ad7eb12e172f0caccfc",
+          "lerobot_io.py": "f178f5c50ebb9e806bcbede2a3542639edeeb5e9639bf96a3b8e65beb51d15e4"
+        },
+        "dataset_query": "pickleable ProjectedDatasetReader; LeRobot 0.6.1 / datasets 4.8.5",
+        "dataloader_multiprocessing_context": "spawn",
+        "official_dataset_reader_sha256": "3a477dae6aa887449f09be25b385485b065861d13c5448b9369a0ba09f01bb5d",
+        "backbone_initialization": "random; no pretrained weights",
+        "finished_unix": 1788903126.1606333
+      },
+      "points": [
+        {
+          "step": 100,
+          "loss": 1.051186182498932,
+          "update_s": 0.07470905388705433,
+          "data_s": 0.17458587762899697,
+          "timestamp_unix": 1788902769.237184
+        },
+        {
+          "step": 200,
+          "loss": 0.9917705589532853,
+          "update_s": 0.06671476413495839,
+          "data_s": 0.11969902832992375,
+          "timestamp_unix": 1788902787.9633749
+        },
+        {
+          "step": 300,
+          "loss": 0.8172678077220916,
+          "update_s": 0.06708509689196944,
+          "data_s": 0.11617899956181646,
+          "timestamp_unix": 1788902806.3803797
+        },
+        {
+          "step": 400,
+          "loss": 0.5060031402111054,
+          "update_s": 0.06588283888064325,
+          "data_s": 0.12350012698210776,
+          "timestamp_unix": 1788902825.510658
+        },
+        {
+          "step": 500,
+          "loss": 0.2969991478323937,
+          "update_s": 0.06809156693518162,
+          "data_s": 0.11692031042650342,
+          "timestamp_unix": 1788902844.163921
+        },
+        {
+          "step": 600,
+          "loss": 0.19849311366677283,
+          "update_s": 0.06438569794408977,
+          "data_s": 0.12117777612060308,
+          "timestamp_unix": 1788902862.8038652
+        },
+        {
+          "step": 700,
+          "loss": 0.14912642449140548,
+          "update_s": 0.06578710653819143,
+          "data_s": 0.11822371877729893,
+          "timestamp_unix": 1788902881.3163967
+        },
+        {
+          "step": 800,
+          "loss": 0.11277232535183429,
+          "update_s": 0.0658799427933991,
+          "data_s": 0.12265591801144182,
+          "timestamp_unix": 1788902900.2646873
+        },
+        {
+          "step": 900,
+          "loss": 0.09790364116430282,
+          "update_s": 0.0663288067560643,
+          "data_s": 0.11772422548383474,
+          "timestamp_unix": 1788902918.7790658
+        },
+        {
+          "step": 1000,
+          "loss": 0.08790839858353137,
+          "update_s": 0.06334589042700828,
+          "data_s": 0.11971245093271136,
+          "timestamp_unix": 1788902937.185112
+        },
+        {
+          "step": 1100,
+          "loss": 0.08118279799818992,
+          "update_s": 0.06515847682021558,
+          "data_s": 0.11420393210835755,
+          "timestamp_unix": 1788902955.6733756
+        },
+        {
+          "step": 1200,
+          "loss": 0.06744884584099055,
+          "update_s": 0.0665446169488132,
+          "data_s": 0.11807885611429811,
+          "timestamp_unix": 1788902974.235933
+        },
+        {
+          "step": 1300,
+          "loss": 0.06300203375518322,
+          "update_s": 0.06454505096189678,
+          "data_s": 0.121296575544402,
+          "timestamp_unix": 1788902992.951714
+        },
+        {
+          "step": 1400,
+          "loss": 0.05839825361967087,
+          "update_s": 0.0654233435727656,
+          "data_s": 0.11631818766705691,
+          "timestamp_unix": 1788903011.2256563
+        },
+        {
+          "step": 1500,
+          "loss": 0.05176156774163246,
+          "update_s": 0.06480523744598031,
+          "data_s": 0.11972863710485399,
+          "timestamp_unix": 1788903029.7953813
+        },
+        {
+          "step": 1600,
+          "loss": 0.04943219900131226,
+          "update_s": 0.06521813892759383,
+          "data_s": 0.12581523322500288,
+          "timestamp_unix": 1788903048.9965491
+        },
+        {
+          "step": 1700,
+          "loss": 0.04346212692558765,
+          "update_s": 0.06538464948534965,
+          "data_s": 0.1193528509978205,
+          "timestamp_unix": 1788903067.6278415
+        },
+        {
+          "step": 1800,
+          "loss": 0.04036816855892539,
+          "update_s": 0.06545308424159885,
+          "data_s": 0.11946109858341515,
+          "timestamp_unix": 1788903086.2242262
+        },
+        {
+          "step": 1900,
+          "loss": 0.04120076136663556,
+          "update_s": 0.06497480278834701,
+          "data_s": 0.11831242059357465,
+          "timestamp_unix": 1788903104.6895328
+        },
+        {
+          "step": 2000,
+          "loss": 0.04039604354649782,
+          "update_s": 0.06623426221311092,
+          "data_s": 0.12686310581862925,
+          "timestamp_unix": 1788903124.1216493
+        }
+      ],
+      "nominal_log_interval_updates": 100,
+      "point_semantics": "loss, update_s and data_s are means since the previous log reset"
+    }
+  ],
+  "per_seed": [
+    {
+      "run_id": "nominal-act-2000-spawn",
+      "method": "act",
+      "condition": "nominal",
+      "seed": 11,
+      "role": "diagnostic_invalid_image_statistics",
+      "domain": "nominal_training_scene",
+      "audit": {
+        "status": "completed",
+        "started_unix": 1788903141.6040263,
+        "checkpoint": "/mnt2/zhexi/deskclean-real2sim/agent/out/imitation/train/pilot/nominal-act-2000-spawn/checkpoints/002000/pretrained_model",
+        "model_sha256": "6446c694cad4f465b398b7aa7d1bdb588be655aca22b7a3d62b28cdd3ddebb02",
+        "episode_list_sha256": "95c7ac66d9f6e371396dc504efc43c39f4b366610b26846ff458a8218960df8a",
+        "image_donor_sha256": null,
+        "arguments": {
+          "checkpoint": "agent/out/imitation/train/pilot/nominal-act-2000-spawn/checkpoints/002000/pretrained_model",
+          "episodes_file": "agent/out/augmentation-nominal-v2/successful.json",
+          "output": "agent/out/imitation/eval/pilot/nominal-act-2000",
+          "steps": 180,
+          "seed": 2000,
+          "device": "cuda",
+          "image_donor": null
+        },
+        "finished_unix": 1788903241.4913476
+      },
+      "scene_count": 1,
+      "scene_sha256": [
+        "ed0f35b6957c740a4db5bd521595f4b90086dbbc8d8126a509a9d67c4444e01f"
+      ],
+      "task_success": {
+        "successes": 0,
+        "total": 1,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.7934506856227626
+        ]
+      },
+      "physical_success": {
+        "successes": 0,
+        "total": 1,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.7934506856227626
+        ]
+      },
+      "collected_blocks": {
+        "mean": 0.0,
+        "min": 0,
+        "max": 0,
+        "total": 0,
+        "available": 6
+      },
+      "penetration_m": {
+        "all": {
+          "mean": 0.00018266076827378776,
+          "max": 0.00018266076827378776
+        },
+        "block_dustpan": {
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "robot_self": {
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "forbidden_collision": {
+          "mean": 0.0,
+          "max": 0.0
+        }
+      }
+    },
+    {
+      "run_id": "four-diffusion-2000-spawn",
+      "method": "diffusion",
+      "condition": "pilot-four",
+      "seed": 11,
+      "role": "diagnostic_invalid_image_statistics",
+      "domain": "four_training_scenes",
+      "audit": {
+        "status": "completed",
+        "started_unix": 1788903300.302259,
+        "checkpoint": "/mnt2/zhexi/deskclean-real2sim/agent/out/imitation/train/pilot/four-diffusion-2000-spawn/checkpoints/002000/pretrained_model",
+        "model_sha256": "78edf491386cc89c57781523d5c0a853cf6e32c025388fc47fd6efe8b5643d97",
+        "episode_list_sha256": "c50a583f306291dbe6a90f4cfe536b3fb5a486906807506f0adaf47f7757f72a",
+        "image_donor_sha256": null,
+        "arguments": {
+          "checkpoint": "agent/out/imitation/train/pilot/four-diffusion-2000-spawn/checkpoints/002000/pretrained_model",
+          "episodes_file": "agent/out/augmentation-train-v1/pilot-four.json",
+          "output": "agent/out/imitation/eval/pilot/four-diffusion-2000",
+          "steps": 180,
+          "seed": 2000,
+          "device": "cuda",
+          "image_donor": null
+        },
+        "finished_unix": 1788903709.6136565
+      },
+      "scene_count": 4,
+      "scene_sha256": [
+        "69247829da8a6bf71e78cad12cf5b390439784834e3e6701057753738cb62c3d",
+        "a7d5aa5f67b72b97785f3947db081dc0fe70972ddbb41396ff93a4297537455c",
+        "7f6a41ba46e11369fb0607f9ff3cb2e849b650c934e6aaca13570a26acae5ea5",
+        "f56eb9b48f6e2fcddb896a067a966ed0902ba58c7e32175b089154a2cf6173c2"
+      ],
+      "task_success": {
+        "successes": 0,
+        "total": 4,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.4898908364545973
+        ]
+      },
+      "physical_success": {
+        "successes": 0,
+        "total": 4,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.4898908364545973
+        ]
+      },
+      "collected_blocks": {
+        "mean": 0.0,
+        "min": 0,
+        "max": 0,
+        "total": 0,
+        "available": 24
+      },
+      "penetration_m": {
+        "all": {
+          "mean": 0.008988582024602034,
+          "max": 0.014084570353261432
+        },
+        "block_dustpan": {
+          "mean": 0.006355876903507919,
+          "max": 0.014084570353261432
+        },
+        "robot_self": {
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "forbidden_collision": {
+          "mean": 0.005810195105519255,
+          "max": 0.006793612089244081
+        }
+      }
+    }
+  ],
+  "across_seeds": [
+    {
+      "method": "act",
+      "condition": "nominal",
+      "role": "diagnostic_invalid_image_statistics",
+      "domain": "nominal_training_scene",
+      "run_ids": [
+        "nominal-act-2000-spawn"
+      ],
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "expected_seeds": [
+        11
+      ],
+      "task_success_rate": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "physical_success_rate": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "collected_blocks_mean": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "penetration_m": {
+        "all": {
+          "per_seed_mean": {
+            "mean": 0.00018266076827378776,
+            "min": 0.00018266076827378776,
+            "max": 0.00018266076827378776
+          },
+          "per_seed_max": {
+            "mean": 0.00018266076827378776,
+            "min": 0.00018266076827378776,
+            "max": 0.00018266076827378776
+          }
+        },
+        "block_dustpan": {
+          "per_seed_mean": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "per_seed_max": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "robot_self": {
+          "per_seed_mean": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "per_seed_max": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "forbidden_collision": {
+          "per_seed_mean": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "per_seed_max": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        }
+      },
+      "aggregation": "equal-weight seed mean and observed range; no pooled confidence interval"
+    },
+    {
+      "method": "diffusion",
+      "condition": "pilot-four",
+      "role": "diagnostic_invalid_image_statistics",
+      "domain": "four_training_scenes",
+      "run_ids": [
+        "four-diffusion-2000-spawn"
+      ],
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "expected_seeds": [
+        11
+      ],
+      "task_success_rate": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "physical_success_rate": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "collected_blocks_mean": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "penetration_m": {
+        "all": {
+          "per_seed_mean": {
+            "mean": 0.008988582024602034,
+            "min": 0.008988582024602034,
+            "max": 0.008988582024602034
+          },
+          "per_seed_max": {
+            "mean": 0.014084570353261432,
+            "min": 0.014084570353261432,
+            "max": 0.014084570353261432
+          }
+        },
+        "block_dustpan": {
+          "per_seed_mean": {
+            "mean": 0.006355876903507919,
+            "min": 0.006355876903507919,
+            "max": 0.006355876903507919
+          },
+          "per_seed_max": {
+            "mean": 0.014084570353261432,
+            "min": 0.014084570353261432,
+            "max": 0.014084570353261432
+          }
+        },
+        "robot_self": {
+          "per_seed_mean": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "per_seed_max": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "forbidden_collision": {
+          "per_seed_mean": {
+            "mean": 0.005810195105519255,
+            "min": 0.005810195105519255,
+            "max": 0.005810195105519255
+          },
+          "per_seed_max": {
+            "mean": 0.006793612089244081,
+            "min": 0.006793612089244081,
+            "max": 0.006793612089244081
+          }
+        }
+      },
+      "aggregation": "equal-weight seed mean and observed range; no pooled confidence interval"
+    }
+  ],
+  "paired": [],
+  "sources_sha256": {
+    "/mnt2/zhexi/deskclean-real2sim/agent/out/experiment-summary/pilot-2000-registry.json": "6f9a4128c9bc1b96494e36b4e28944eb1bc36e9918b91d417530495157d67423",
+    "/mnt2/zhexi/deskclean-real2sim/agent/out/imitation/train/pilot/nominal-act-2000-spawn.attempt.json": "1bd21feff5c1c4c52d523ca955dc5886e9032de97df9bef0e3c6a9748c29fc3c",
+    "/mnt2/zhexi/deskclean-real2sim/agent/out/imitation/train/pilot/nominal-act-2000-spawn/wandb/offline-run-20260909_052541-jxh6btye/run-jxh6btye.wandb": "ed63539c6555ff3c3fb917a1ed6e0cd86707036e4f37392cf13694feb5f0fdef",
+    "/mnt2/zhexi/deskclean-real2sim/agent/out/imitation/eval/pilot/nominal-act-2000/evaluation.json": "b8817433bb7e616b972042ed8ff16843f6c7cc17cf663cddacf3770c3b085ecd",
+    "/mnt2/zhexi/deskclean-real2sim/agent/out/imitation/eval/pilot/nominal-act-2000/results.jsonl": "ba2dbc6e44c197e4632c31fbdd13c2a8ecf58e8b3e0c05794890df31c2303599",
+    "/mnt2/zhexi/deskclean-real2sim/agent/out/imitation/eval/pilot/nominal-act-2000/00000/metrics.json": "0a4d0b35f16ef2b6b3d4e92936b6cf0a0939ec84b5293b2a80a8425d248613d5",
+    "/mnt2/zhexi/deskclean-real2sim/agent/out/imitation/train/pilot/four-diffusion-2000-spawn.attempt.json": "047cd62d246d4a29d6d31a65af8009fa9a850da8f1ed71837488e1cb810fed9a",
+    "/mnt2/zhexi/deskclean-real2sim/agent/out/imitation/train/pilot/four-diffusion-2000-spawn/wandb/offline-run-20260909_052542-54f7eiif/run-54f7eiif.wandb": "c234c21add720c28b6cdba5ec16313419038885a6be8b0cb1b7499bf63a24062",
+    "/mnt2/zhexi/deskclean-real2sim/agent/out/imitation/eval/pilot/four-diffusion-2000/evaluation.json": "dea7dda45cfe8642302b740012ce5cf2001572ae5c5badf24841f7f90c408f8e",
+    "/mnt2/zhexi/deskclean-real2sim/agent/out/imitation/eval/pilot/four-diffusion-2000/results.jsonl": "b99eff97d7c21f5aad3eaa9e95e1222f6651e871aa8b827278f4439dc3d3e5f0",
+    "/mnt2/zhexi/deskclean-real2sim/agent/out/imitation/eval/pilot/four-diffusion-2000/00000/metrics.json": "c549190ed7557f6893bf00d3dbc61144d684cf47d7023a12bed1063dcf4e9a5a",
+    "/mnt2/zhexi/deskclean-real2sim/agent/out/imitation/eval/pilot/four-diffusion-2000/00001/metrics.json": "5ddd8e016d561da9b1699d85467e442f37e8288cfd6516360a4216bf575678e0",
+    "/mnt2/zhexi/deskclean-real2sim/agent/out/imitation/eval/pilot/four-diffusion-2000/00002/metrics.json": "e94f676ccab9c765d22fd542d549918af53edf9f217440f827476b9cbb5c5a1e",
+    "/mnt2/zhexi/deskclean-real2sim/agent/out/imitation/eval/pilot/four-diffusion-2000/00003/metrics.json": "dd163a7b6969c198731a3673822ad036ab82bdfe1df4350a83296b4b54eaaed8"
+  },
+  "implementation_sha256": "c5866b7bb91634cc2e31a435100a99f43ff0acdd222a927f1fef265c767e773b",
+  "packages": {
+    "wandb": "0.27.2",
+    "scipy": "1.18.0"
+  }
+}

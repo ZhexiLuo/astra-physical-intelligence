@@ -1,0 +1,27 @@
+{
+  "raw_file": "/Users/zhexiluo/Documents/ChatGPT/gpt6-ultra-real2sim/agent/out/augmentation-visuals/process/augmentation-live.mkv",
+  "raw_sha256": "af2d93aae9759c23d9de386bcd1e1307d0902ba2127fbff0933681e48156a81d",
+  "file": "augmentation-workflow-full.mp4",
+  "sha256": "589dcd536c239e9cdc10b853d6ac6830677708d5f2b7ca53b07f96ba181c114f",
+  "stream_sha256": "SHA256=6ade9e006d96f8b2b30f2da046b77d16fbd46bfad8728d6831a0b9bfdd653e57",
+  "duration_s": 3623.0,
+  "frames": 10869,
+  "fps": 3,
+  "resolution": [
+    1280,
+    720
+  ],
+  "stream_unchanged": true,
+  "full_decode_passed": true,
+  "events_sha256": "229663796d66f24844b28371ef59b527f57344af38a35934731b7e9c9ffb9c71",
+  "notes": "Single uninterrupted capture with failures and idle periods retained. Event offsets use recorder process launch and are approximate. Shutdown events after the recording stops are outside the video.",
+  "continuous_segments": [
+    {
+      "start_s": 0,
+      "end_s": 3623.0,
+      "speed_multiplier": 1
+    }
+  ],
+  "coverage": "Actual remote Blender GUI and visible terminal activity on the dedicated display :117. Background code editing and all CLI activity are documented separately in workflow logs; this video does not capture every background operation.",
+  "training_context": "The visible 2000-update ACT and Diffusion runs are diagnostic pilots. Later analysis identified dataset RGB-statistic issues; these are not final validated training results."
+}

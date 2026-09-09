@@ -1,0 +1,35 @@
+{
+  "render_sha256": "1fbd37fab2f75f115bcc4b8624e234f9ee6d127cf36d156e2d6e32f587456502",
+  "blend_sha256": "ede636771b204ea9be24568e13d98770a1aaa96cee0748f45333f1803cdbbb62",
+  "fps": 20,
+  "resolution": [
+    1280,
+    720
+  ],
+  "timing": "Native 20 Hz frames; terminal hold as specified in scene manifest.",
+  "videos": [
+    {
+      "file": "workstation-array.mp4",
+      "sha256": "816a34db96d27d59bc96ebd61535c018fd047f250e6e57c63b9d9a1577e73227",
+      "scene": "array",
+      "frames": 175,
+      "duration_s": 8.75,
+      "poster_frame": 87
+    },
+    {
+      "file": "world-trajectories.mp4",
+      "sha256": "6cf57dec20b6125a2d8cd801c42704bde9b4d204b326d1bdb7d90779db0996c7",
+      "scene": "trajectories",
+      "frames": 302,
+      "duration_s": 15.1,
+      "poster_frame": 301
+    },
+    {
+      "file": "augmentation-tour.mp4",
+      "sha256": "0d345a5600e6f14c40f9b0dbdb9d83787678f426b348f23b2fce3370473e7329",
+      "scene": "array then trajectories",
+      "frames": 477,
+      "duration_s": 23.85
+    }
+  ]
+}

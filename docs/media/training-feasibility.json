@@ -1,0 +1,23 @@
+{
+  "source": "agent/out/augmentation-train-v1/attempts.jsonl",
+  "count": 512,
+  "accepted": 303,
+  "all_six_collected": 447,
+  "failures_nonexclusive": {
+    "collected_all": 65,
+    "final_hold_collected": 65,
+    "collection_gate": 63,
+    "lifted_pan": 63,
+    "global_penetration": 151,
+    "initial_nonoverlap": 83,
+    "settled_blocks": 28,
+    "pan_penetration": 63,
+    "robot_self_penetration": 23,
+    "pan_lip_table_gap": 33,
+    "pan_plane_tilt": 8,
+    "physical_contacts": 6,
+    "pan_target_orientation": 1,
+    "ik_position": 1
+  },
+  "role": "Registered training pool; not learned policy evaluation"
+}

@@ -1,0 +1,1027 @@
+{
+  "episode": "/mnt2/zhexi/deskclean-real2sim/agent/out/augmentation-train-v1/episode-000001",
+  "trajectory_sha256": "daa566023e65560d227bbcb2e8ebbcfc9e0bdf2cddb0141a81704e6ee8945061",
+  "states_per_endpoint_per_stage": 10,
+  "same_gpu": 4,
+  "throughput_scope": "actual concurrent dual-camera render windows, including first frame",
+  "stages": [
+    {
+      "workers": 1,
+      "dual_camera_states": 10,
+      "aggregate_render_window_s": 4.606158156879246,
+      "dual_camera_states_per_second": 2.171006652271614,
+      "cross_endpoint_mean_abs_pixel_error": {
+        "gpu4-v2": {
+          "images_top": 0.0,
+          "images_wrist": 0.0
+        }
+      },
+      "endpoints": [
+        {
+          "socket": "/mnt2/zhexi/deskclean-real2sim/agent/out/sensors/gpu4-v2.sock",
+          "config": {
+            "blender": "4.2.1 LTS",
+            "engine": "CYCLES",
+            "samples": 8,
+            "exposure": -0.699999988079071,
+            "denoiser": "OPENIMAGEDENOISE",
+            "denoising_use_gpu": true,
+            "observation_resolution": [
+              224,
+              224
+            ],
+            "sha256": {
+              "/mnt2/zhexi/deskclean-real2sim/agent/out/deskclean.blend": "9823c5bc2ef13cd483f413613c7f84f67179cbc6653b0e34e5f3af707ef7e98d",
+              "/mnt2/zhexi/deskclean-real2sim/agent/out/simulation/trajectory.npz": "4d5ca3de4f51627c0c0ada2c22c8cfcfd327bc36715aeaddcc4bc7f4b77cb46a",
+              "/mnt2/zhexi/deskclean-real2sim/agent/out/simulation/resolved-scene-spec.json": "0ebb236afd4273bae081ac456800085832fac7d1cd5b80e0c9c770cdaf0f6e03",
+              "/mnt2/zhexi/deskclean-real2sim/src/blender_sensor_server.py": "18554de9d32cde9650c87fe0a9c7a10312e33aeb7e187594f15c8ece286c6ddc",
+              "/mnt2/zhexi/deskclean-real2sim/src/blender_state.py": "39982d35c7d24a1848e2df0a6c4e88efdf08e9029baec5adc12dbd7c33d93d98"
+            },
+            "geometry_source": "current MuJoCo state",
+            "reference_animation": "cleared"
+          },
+          "frames": 10,
+          "physics_indices": [
+            0,
+            525,
+            1050,
+            1575,
+            2100,
+            2625,
+            3150,
+            3675,
+            0,
+            3675
+          ],
+          "started": 7353942.45578116,
+          "finished": 7353947.061939317,
+          "client_latency_s": [
+            0.5426654340699315,
+            0.4602731727063656,
+            0.4504333445802331,
+            0.44591232296079397,
+            0.4323871238157153,
+            0.444402601569891,
+            0.4385871961712837,
+            0.4457593848928809,
+            0.4560040012001991,
+            0.4461779650300741
+          ],
+          "sensor_frames": [
+            {
+              "physics_time": 0.0,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.5232450580224395,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 1.0500000000000007,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.45433352794498205,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 2.0999999999999903,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.4440283514559269,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 3.1499999999998747,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.4397063897922635,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 4.1999999999997595,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.42614391911774874,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 5.249999999999644,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.4380712956190109,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 6.299999999999528,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.43230091501027346,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 7.349999999999413,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.4393488261848688,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 0.0,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.44978365395218134,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 7.349999999999413,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.4396556708961725,
+              "objects_updated": 57
+            }
+          ],
+          "repeated_endpoint_mean_abs_pixel_error": {
+            "images_top": [
+              0.014987244897959183,
+              0.014063828656462584
+            ],
+            "images_wrist": [
+              0.014548788265306123,
+              0.014136904761904762
+            ]
+          },
+          "first_last_mean_abs_pixel_change": {
+            "images_top": 15.582755367772108,
+            "images_wrist": 35.4167330994898
+          }
+        }
+      ]
+    },
+    {
+      "workers": 2,
+      "dual_camera_states": 20,
+      "aggregate_render_window_s": 4.709850843064487,
+      "dual_camera_states_per_second": 4.246418977248737,
+      "cross_endpoint_mean_abs_pixel_error": {
+        "gpu4-v2": {
+          "images_top": 0.0,
+          "images_wrist": 0.0
+        },
+        "gpu4-pool2": {
+          "images_top": 0.01468829719387755,
+          "images_wrist": 0.014811197916666666
+        }
+      },
+      "endpoints": [
+        {
+          "socket": "/mnt2/zhexi/deskclean-real2sim/agent/out/sensors/gpu4-v2.sock",
+          "config": {
+            "blender": "4.2.1 LTS",
+            "engine": "CYCLES",
+            "samples": 8,
+            "exposure": -0.699999988079071,
+            "denoiser": "OPENIMAGEDENOISE",
+            "denoising_use_gpu": true,
+            "observation_resolution": [
+              224,
+              224
+            ],
+            "sha256": {
+              "/mnt2/zhexi/deskclean-real2sim/agent/out/deskclean.blend": "9823c5bc2ef13cd483f413613c7f84f67179cbc6653b0e34e5f3af707ef7e98d",
+              "/mnt2/zhexi/deskclean-real2sim/agent/out/simulation/trajectory.npz": "4d5ca3de4f51627c0c0ada2c22c8cfcfd327bc36715aeaddcc4bc7f4b77cb46a",
+              "/mnt2/zhexi/deskclean-real2sim/agent/out/simulation/resolved-scene-spec.json": "0ebb236afd4273bae081ac456800085832fac7d1cd5b80e0c9c770cdaf0f6e03",
+              "/mnt2/zhexi/deskclean-real2sim/src/blender_sensor_server.py": "18554de9d32cde9650c87fe0a9c7a10312e33aeb7e187594f15c8ece286c6ddc",
+              "/mnt2/zhexi/deskclean-real2sim/src/blender_state.py": "39982d35c7d24a1848e2df0a6c4e88efdf08e9029baec5adc12dbd7c33d93d98"
+            },
+            "geometry_source": "current MuJoCo state",
+            "reference_animation": "cleared"
+          },
+          "frames": 10,
+          "physics_indices": [
+            0,
+            525,
+            1050,
+            1575,
+            2100,
+            2625,
+            3150,
+            3675,
+            0,
+            3675
+          ],
+          "started": 7353947.502140694,
+          "finished": 7353952.064926654,
+          "client_latency_s": [
+            0.49095659237354994,
+            0.4771982142701745,
+            0.4417542330920696,
+            0.43487500958144665,
+            0.4554870454594493,
+            0.44080656860023737,
+            0.44358985777944326,
+            0.44222764391452074,
+            0.44405297841876745,
+            0.4482428329065442
+          ],
+          "sensor_frames": [
+            {
+              "physics_time": 0.0,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.47117031645029783,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 1.0500000000000007,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.4717413056641817,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 2.0999999999999903,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.4361496139317751,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 3.1499999999998747,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.4285365417599678,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 4.1999999999997595,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.4492534315213561,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 5.249999999999644,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.4345378326252103,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 6.299999999999528,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.43708162661641836,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 7.349999999999413,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.43593180924654007,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 0.0,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.43783691246062517,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 7.349999999999413,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.44183944165706635,
+              "objects_updated": 57
+            }
+          ],
+          "repeated_endpoint_mean_abs_pixel_error": {
+            "images_top": [
+              0.013957536139455782,
+              0.01232328869047619
+            ],
+            "images_wrist": [
+              0.01446906887755102,
+              0.014601934523809524
+            ]
+          },
+          "first_last_mean_abs_pixel_change": {
+            "images_top": 15.582343484268707,
+            "images_wrist": 35.41576982355442
+          }
+        },
+        {
+          "socket": "/mnt2/zhexi/deskclean-real2sim/agent/out/sensors/gpu4-pool2.sock",
+          "config": {
+            "blender": "4.2.1 LTS",
+            "engine": "CYCLES",
+            "samples": 8,
+            "exposure": -0.699999988079071,
+            "denoiser": "OPENIMAGEDENOISE",
+            "denoising_use_gpu": true,
+            "observation_resolution": [
+              224,
+              224
+            ],
+            "sha256": {
+              "/mnt2/zhexi/deskclean-real2sim/agent/out/deskclean.blend": "9823c5bc2ef13cd483f413613c7f84f67179cbc6653b0e34e5f3af707ef7e98d",
+              "/mnt2/zhexi/deskclean-real2sim/agent/out/simulation/trajectory.npz": "4d5ca3de4f51627c0c0ada2c22c8cfcfd327bc36715aeaddcc4bc7f4b77cb46a",
+              "/mnt2/zhexi/deskclean-real2sim/agent/out/simulation/resolved-scene-spec.json": "0ebb236afd4273bae081ac456800085832fac7d1cd5b80e0c9c770cdaf0f6e03",
+              "/mnt2/zhexi/deskclean-real2sim/src/blender_sensor_server.py": "18554de9d32cde9650c87fe0a9c7a10312e33aeb7e187594f15c8ece286c6ddc",
+              "/mnt2/zhexi/deskclean-real2sim/src/blender_state.py": "39982d35c7d24a1848e2df0a6c4e88efdf08e9029baec5adc12dbd7c33d93d98"
+            },
+            "geometry_source": "current MuJoCo state",
+            "reference_animation": "cleared"
+          },
+          "frames": 10,
+          "physics_indices": [
+            0,
+            525,
+            1050,
+            1575,
+            2100,
+            2625,
+            3150,
+            3675,
+            0,
+            3675
+          ],
+          "started": 7353947.558331469,
+          "finished": 7353952.211991537,
+          "client_latency_s": [
+            0.48617541231215,
+            0.47293712850660086,
+            0.44221669901162386,
+            0.4426500638946891,
+            0.4636166403070092,
+            0.4506037523970008,
+            0.4661158248782158,
+            0.48378267884254456,
+            0.44413152523338795,
+            0.4490697383880615
+          ],
+          "sensor_frames": [
+            {
+              "physics_time": 0.0,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.46585895493626595,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 1.0500000000000007,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.46663783211261034,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 2.0999999999999903,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.4357955874875188,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 3.1499999999998747,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.4364687977358699,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 4.1999999999997595,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.45735411532223225,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 5.249999999999644,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.4444354008883238,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 6.299999999999528,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.4598483918234706,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 7.349999999999413,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.47737251315265894,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 0.0,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.4378357511013746,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 7.349999999999413,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.4426610069349408,
+              "objects_updated": 57
+            }
+          ],
+          "repeated_endpoint_mean_abs_pixel_error": {
+            "images_top": [
+              0.014322916666666666,
+              0.013977465986394558
+            ],
+            "images_wrist": [
+              0.014601934523809524,
+              0.014768016581632654
+            ]
+          },
+          "first_last_mean_abs_pixel_change": {
+            "images_top": 15.582795227465986,
+            "images_wrist": 35.4159624787415
+          }
+        }
+      ]
+    },
+    {
+      "workers": 4,
+      "dual_camera_states": 40,
+      "aggregate_render_window_s": 5.937138544395566,
+      "dual_camera_states_per_second": 6.737252247171912,
+      "cross_endpoint_mean_abs_pixel_error": {
+        "gpu4-v2": {
+          "images_top": 0.0,
+          "images_wrist": 0.0
+        },
+        "gpu4-pool2": {
+          "images_top": 0.014382706207482993,
+          "images_wrist": 0.014671688988095238
+        },
+        "gpu4-pool3": {
+          "images_top": 0.013831313775510204,
+          "images_wrist": 0.01523968962585034
+        },
+        "gpu4-pool4": {
+          "images_top": 0.01404389880952381,
+          "images_wrist": 0.01431627338435374
+        }
+      },
+      "endpoints": [
+        {
+          "socket": "/mnt2/zhexi/deskclean-real2sim/agent/out/sensors/gpu4-v2.sock",
+          "config": {
+            "blender": "4.2.1 LTS",
+            "engine": "CYCLES",
+            "samples": 8,
+            "exposure": -0.699999988079071,
+            "denoiser": "OPENIMAGEDENOISE",
+            "denoising_use_gpu": true,
+            "observation_resolution": [
+              224,
+              224
+            ],
+            "sha256": {
+              "/mnt2/zhexi/deskclean-real2sim/agent/out/deskclean.blend": "9823c5bc2ef13cd483f413613c7f84f67179cbc6653b0e34e5f3af707ef7e98d",
+              "/mnt2/zhexi/deskclean-real2sim/agent/out/simulation/trajectory.npz": "4d5ca3de4f51627c0c0ada2c22c8cfcfd327bc36715aeaddcc4bc7f4b77cb46a",
+              "/mnt2/zhexi/deskclean-real2sim/agent/out/simulation/resolved-scene-spec.json": "0ebb236afd4273bae081ac456800085832fac7d1cd5b80e0c9c770cdaf0f6e03",
+              "/mnt2/zhexi/deskclean-real2sim/src/blender_sensor_server.py": "18554de9d32cde9650c87fe0a9c7a10312e33aeb7e187594f15c8ece286c6ddc",
+              "/mnt2/zhexi/deskclean-real2sim/src/blender_state.py": "39982d35c7d24a1848e2df0a6c4e88efdf08e9029baec5adc12dbd7c33d93d98"
+            },
+            "geometry_source": "current MuJoCo state",
+            "reference_animation": "cleared"
+          },
+          "frames": 10,
+          "physics_indices": [
+            0,
+            525,
+            1050,
+            1575,
+            2100,
+            2625,
+            3150,
+            3675,
+            0,
+            3675
+          ],
+          "started": 7353952.735283591,
+          "finished": 7353957.800456933,
+          "client_latency_s": [
+            0.6831805063411593,
+            0.46128420252352953,
+            0.4538972480222583,
+            0.4867712100967765,
+            0.4479877967387438,
+            0.5613811630755663,
+            0.47611291613429785,
+            0.44857313577085733,
+            0.510702901519835,
+            0.4918141160160303
+          ],
+          "sensor_frames": [
+            {
+              "physics_time": 0.0,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.6634739022701979,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 1.0500000000000007,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.45569122303277254,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 2.0999999999999903,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.4478524848818779,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 3.1499999999998747,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.48061017133295536,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 4.1999999999997595,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.4416671646758914,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 5.249999999999644,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.5550829647108912,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 6.299999999999528,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.47005606535822153,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 7.349999999999413,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.44212913047522306,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 0.0,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.5044910153374076,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 7.349999999999413,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.48539496678858995,
+              "objects_updated": 57
+            }
+          ],
+          "repeated_endpoint_mean_abs_pixel_error": {
+            "images_top": [
+              0.015339338860544218,
+              0.014309630102040817
+            ],
+            "images_wrist": [
+              0.014077115221088435,
+              0.015385841836734694
+            ]
+          },
+          "first_last_mean_abs_pixel_change": {
+            "images_top": 15.58268893494898,
+            "images_wrist": 35.41628799957483
+          }
+        },
+        {
+          "socket": "/mnt2/zhexi/deskclean-real2sim/agent/out/sensors/gpu4-pool2.sock",
+          "config": {
+            "blender": "4.2.1 LTS",
+            "engine": "CYCLES",
+            "samples": 8,
+            "exposure": -0.699999988079071,
+            "denoiser": "OPENIMAGEDENOISE",
+            "denoising_use_gpu": true,
+            "observation_resolution": [
+              224,
+              224
+            ],
+            "sha256": {
+              "/mnt2/zhexi/deskclean-real2sim/agent/out/deskclean.blend": "9823c5bc2ef13cd483f413613c7f84f67179cbc6653b0e34e5f3af707ef7e98d",
+              "/mnt2/zhexi/deskclean-real2sim/agent/out/simulation/trajectory.npz": "4d5ca3de4f51627c0c0ada2c22c8cfcfd327bc36715aeaddcc4bc7f4b77cb46a",
+              "/mnt2/zhexi/deskclean-real2sim/agent/out/simulation/resolved-scene-spec.json": "0ebb236afd4273bae081ac456800085832fac7d1cd5b80e0c9c770cdaf0f6e03",
+              "/mnt2/zhexi/deskclean-real2sim/src/blender_sensor_server.py": "18554de9d32cde9650c87fe0a9c7a10312e33aeb7e187594f15c8ece286c6ddc",
+              "/mnt2/zhexi/deskclean-real2sim/src/blender_state.py": "39982d35c7d24a1848e2df0a6c4e88efdf08e9029baec5adc12dbd7c33d93d98"
+            },
+            "geometry_source": "current MuJoCo state",
+            "reference_animation": "cleared"
+          },
+          "frames": 10,
+          "physics_indices": [
+            0,
+            525,
+            1050,
+            1575,
+            2100,
+            2625,
+            3150,
+            3675,
+            0,
+            3675
+          ],
+          "started": 7353952.790201849,
+          "finished": 7353957.950172977,
+          "client_latency_s": [
+            0.6524643301963806,
+            0.501715961843729,
+            0.5661422647535801,
+            0.45179457031190395,
+            0.507065849378705,
+            0.4857026506215334,
+            0.4547464018687606,
+            0.43689674884080887,
+            0.4835718898102641,
+            0.5663641188293695
+          ],
+          "sensor_frames": [
+            {
+              "physics_time": 0.0,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.6274250689893961,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 1.0500000000000007,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.4943924443796277,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 2.0999999999999903,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.5594399673864245,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 3.1499999999998747,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.44545831996947527,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 4.1999999999997595,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.5007744627073407,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 5.249999999999644,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.47929607331752777,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 6.299999999999528,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.44841543585062027,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 7.349999999999413,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.43042362201958895,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 0.0,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.47719090338796377,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 7.349999999999413,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.5599687965586782,
+              "objects_updated": 57
+            }
+          ],
+          "repeated_endpoint_mean_abs_pixel_error": {
+            "images_top": [
+              0.014801232993197279,
+              0.014010682397959183
+            ],
+            "images_wrist": [
+              0.014874309098639456,
+              0.014960671768707483
+            ]
+          },
+          "first_last_mean_abs_pixel_change": {
+            "images_top": 15.582808514030612,
+            "images_wrist": 35.416042198129254
+          }
+        },
+        {
+          "socket": "/mnt2/zhexi/deskclean-real2sim/agent/out/sensors/gpu4-pool3.sock",
+          "config": {
+            "blender": "4.2.1 LTS",
+            "engine": "CYCLES",
+            "samples": 8,
+            "exposure": -0.699999988079071,
+            "denoiser": "OPENIMAGEDENOISE",
+            "denoising_use_gpu": true,
+            "observation_resolution": [
+              224,
+              224
+            ],
+            "sha256": {
+              "/mnt2/zhexi/deskclean-real2sim/agent/out/deskclean.blend": "9823c5bc2ef13cd483f413613c7f84f67179cbc6653b0e34e5f3af707ef7e98d",
+              "/mnt2/zhexi/deskclean-real2sim/agent/out/simulation/trajectory.npz": "4d5ca3de4f51627c0c0ada2c22c8cfcfd327bc36715aeaddcc4bc7f4b77cb46a",
+              "/mnt2/zhexi/deskclean-real2sim/agent/out/simulation/resolved-scene-spec.json": "0ebb236afd4273bae081ac456800085832fac7d1cd5b80e0c9c770cdaf0f6e03",
+              "/mnt2/zhexi/deskclean-real2sim/src/blender_sensor_server.py": "18554de9d32cde9650c87fe0a9c7a10312e33aeb7e187594f15c8ece286c6ddc",
+              "/mnt2/zhexi/deskclean-real2sim/src/blender_state.py": "39982d35c7d24a1848e2df0a6c4e88efdf08e9029baec5adc12dbd7c33d93d98"
+            },
+            "geometry_source": "current MuJoCo state",
+            "reference_animation": "cleared"
+          },
+          "frames": 10,
+          "physics_indices": [
+            0,
+            525,
+            1050,
+            1575,
+            2100,
+            2625,
+            3150,
+            3675,
+            0,
+            3675
+          ],
+          "started": 7353952.749432764,
+          "finished": 7353958.446509322,
+          "client_latency_s": [
+            1.2086329525336623,
+            0.5343722132965922,
+            0.44983421824872494,
+            0.5354857686907053,
+            0.5468119895085692,
+            0.42592897824943066,
+            0.43713530991226435,
+            0.4698425978422165,
+            0.5496153477579355,
+            0.49486561864614487
+          ],
+          "sensor_frames": [
+            {
+              "physics_time": 0.0,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 1.1890633394941688,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 1.0500000000000007,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.5285216886550188,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 2.0999999999999903,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.44382978044450283,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 3.1499999999998747,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.5291794249787927,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 4.1999999999997595,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.540433082729578,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 5.249999999999644,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.41967393178492785,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 6.299999999999528,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.43080109916627407,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 7.349999999999413,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.4633381515741348,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 0.0,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.5431454982608557,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 7.349999999999413,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.48835605569183826,
+              "objects_updated": 57
+            }
+          ],
+          "repeated_endpoint_mean_abs_pixel_error": {
+            "images_top": [
+              0.014170121173469387,
+              0.01403061224489796
+            ],
+            "images_wrist": [
+              0.014874309098639456,
+              0.014296343537414966
+            ]
+          },
+          "first_last_mean_abs_pixel_change": {
+            "images_top": 15.58237005739796,
+            "images_wrist": 35.41612856079932
+          }
+        },
+        {
+          "socket": "/mnt2/zhexi/deskclean-real2sim/agent/out/sensors/gpu4-pool4.sock",
+          "config": {
+            "blender": "4.2.1 LTS",
+            "engine": "CYCLES",
+            "samples": 8,
+            "exposure": -0.699999988079071,
+            "denoiser": "OPENIMAGEDENOISE",
+            "denoising_use_gpu": true,
+            "observation_resolution": [
+              224,
+              224
+            ],
+            "sha256": {
+              "/mnt2/zhexi/deskclean-real2sim/agent/out/deskclean.blend": "9823c5bc2ef13cd483f413613c7f84f67179cbc6653b0e34e5f3af707ef7e98d",
+              "/mnt2/zhexi/deskclean-real2sim/agent/out/simulation/trajectory.npz": "4d5ca3de4f51627c0c0ada2c22c8cfcfd327bc36715aeaddcc4bc7f4b77cb46a",
+              "/mnt2/zhexi/deskclean-real2sim/agent/out/simulation/resolved-scene-spec.json": "0ebb236afd4273bae081ac456800085832fac7d1cd5b80e0c9c770cdaf0f6e03",
+              "/mnt2/zhexi/deskclean-real2sim/src/blender_sensor_server.py": "18554de9d32cde9650c87fe0a9c7a10312e33aeb7e187594f15c8ece286c6ddc",
+              "/mnt2/zhexi/deskclean-real2sim/src/blender_state.py": "39982d35c7d24a1848e2df0a6c4e88efdf08e9029baec5adc12dbd7c33d93d98"
+            },
+            "geometry_source": "current MuJoCo state",
+            "reference_animation": "cleared"
+          },
+          "frames": 10,
+          "physics_indices": [
+            0,
+            525,
+            1050,
+            1575,
+            2100,
+            2625,
+            3150,
+            3675,
+            0,
+            3675
+          ],
+          "started": 7353952.827975625,
+          "finished": 7353958.672422135,
+          "client_latency_s": [
+            1.1886582532897592,
+            0.5052747121080756,
+            0.48269851598888636,
+            0.5009542247280478,
+            0.5319599052891135,
+            0.46700378879904747,
+            0.5213794894516468,
+            0.4983578622341156,
+            0.5855486420914531,
+            0.5095977783203125
+          ],
+          "sensor_frames": [
+            {
+              "physics_time": 0.0,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 1.1636837916448712,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 1.0500000000000007,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.4986470704898238,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 2.0999999999999903,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.47622417099773884,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 3.1499999999998747,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.4946773760020733,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 4.1999999999997595,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.5255783228203654,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 5.249999999999644,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.46064788568764925,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 6.299999999999528,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.5149945048615336,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 7.349999999999413,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.4919013259932399,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 0.0,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.5791261103004217,
+              "objects_updated": 57
+            },
+            {
+              "physics_time": 7.349999999999413,
+              "renderer": "Blender",
+              "engine": "CYCLES",
+              "render_seconds": 0.5028320718556643,
+              "objects_updated": 57
+            }
+          ],
+          "repeated_endpoint_mean_abs_pixel_error": {
+            "images_top": [
+              0.013791454081632654,
+              0.014449139030612245
+            ],
+            "images_wrist": [
+              0.015179900085034014,
+              0.013678518282312925
+            ]
+          },
+          "first_last_mean_abs_pixel_change": {
+            "images_top": 15.582994525935375,
+            "images_wrist": 35.416141847363946
+          }
+        }
+      ]
+    }
+  ],
+  "passed": true
+}

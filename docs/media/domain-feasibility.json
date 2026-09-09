@@ -1,0 +1,19 @@
+{
+  "source": "agent/out/augmentation-domain-v1/attempts.jsonl",
+  "count": 64,
+  "accepted": 41,
+  "all_six_collected": 56,
+  "failures_nonexclusive": {
+    "initial_nonoverlap": 9,
+    "pan_lip_table_gap": 3,
+    "global_penetration": 20,
+    "robot_self_penetration": 3,
+    "pan_penetration": 10,
+    "collected_all": 8,
+    "final_hold_collected": 9,
+    "collection_gate": 8,
+    "lifted_pan": 8,
+    "settled_blocks": 3
+  },
+  "role": "development; not learned policy evaluation"
+}

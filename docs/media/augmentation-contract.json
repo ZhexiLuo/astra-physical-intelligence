@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "episodes": 32,
+  "world_matrix_max_abs_error": 5.364418029785156e-07,
+  "unique_mesh_data": 57,
+  "independent_actions": 1696,
+  "native_fps": 20,
+  "world_space_curves_match": true,
+  "source_hashes_match": true,
+  "curves_accumulate": true,
+  "camera_framing": {
+    "Workstation array": [
+      {
+        "frame": 0,
+        "ndc_min": [
+          0.10603057593107224,
+          0.10692798346281052
+        ],
+        "ndc_max": [
+          0.9300299882888794,
+          0.7662590146064758
+        ]
+      },
+      {
+        "frame": 174,
+        "ndc_min": [
+          0.09732761979103088,
+          0.12589377164840698
+        ],
+        "ndc_max": [
+          0.8992248177528381,
+          0.7699346542358398
+        ]
+      }
+    ],
+    "World-space trajectories": [
+      {
+        "frame": 0,
+        "ndc_min": [
+          0.2696177065372467,
+          0.018455052748322487
+        ],
+        "ndc_max": [
+          0.7167896032333374,
+          0.7171700596809387
+        ]
+      },
+      {
+        "frame": 301,
+        "ndc_min": [
+          0.2332078069448471,
+          0.023448621854186058
+        ],
+        "ndc_max": [
+          0.7428096532821655,
+          0.6942650675773621
+        ]
+      }
+    ]
+  }
+}

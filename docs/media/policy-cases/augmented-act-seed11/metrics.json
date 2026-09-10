@@ -1,0 +1,77 @@
+{
+  "duration": 8.999999999999675,
+  "logical_policy_hz": 20,
+  "max_penetration_m": {
+    "all": 0.006055754075106546,
+    "block_dustpan": 0.006055754075106546,
+    "robot_self": 0.0007078106758236599
+  },
+  "forbidden_collision_penetration_m": 0.0,
+  "interactions": {
+    "brush_block_contacts": 8267,
+    "brush_block_normal_impulse_ns": 36.766400570296014,
+    "dustpan_block_contacts": 2621,
+    "dustpan_block_normal_impulse_ns": 13.249247595779659
+  },
+  "render_seconds_mean": 0.6920523211071834,
+  "render_seconds_p95": 0.7965742070227861,
+  "inference_seconds_mean": 0.005396512424987223,
+  "inference_seconds_p95": 0.016709885792806727,
+  "block_count": 6,
+  "blocks_in_dustpan": 1,
+  "blocks_local_positions": [
+    [
+      -0.04396902190789377,
+      -0.12137244557837758,
+      0.0003758573655280586
+    ],
+    [
+      0.01800856597199671,
+      -0.09960582759180203,
+      3.607569133222714e-05
+    ],
+    [
+      0.07081496511507271,
+      -0.11350185808310173,
+      -0.001151508222765077
+    ],
+    [
+      -0.014892753907988138,
+      0.04889185764497822,
+      0.014157232843762928
+    ],
+    [
+      0.03851618457901303,
+      -0.1603161631239428,
+      -0.001956374837955366
+    ],
+    [
+      0.06589100388316838,
+      -0.17241280935659611,
+      -0.0027074690986509525
+    ]
+  ],
+  "warnings": {},
+  "success": false,
+  "task_success": false,
+  "physical_success": false,
+  "physical_checks": {
+    "no_warnings": true,
+    "pan_lifted": false,
+    "global_penetration": false,
+    "pan_penetration": false,
+    "robot_self_penetration": true,
+    "forbidden_collision": true
+  },
+  "final_pan_height_m": 0.00792442233428825,
+  "success_definition": "final six-block cavity inclusion; physical_success adds shared physical checks",
+  "sampling_seed": 2000,
+  "episode_wall_seconds": 136.72459838632494,
+  "simulation_seconds_per_wall_second": 0.06582575561545659,
+  "episode": "/mnt2/zhexi/deskclean-real2sim/agent/out/evaluation-scenes-v1/test_id/episode-000000",
+  "observation_mode": "live",
+  "scene_sha256": "e695577d658d4476c1c0a5a1c13a91a12f1b7c184c9e17069182197d14e28117",
+  "sensor_audit_sha256": "ddb6cd895a84d33c07bf85d48c2d7f179b5db2c0713f2acb71acb0aebf5179ac",
+  "initialization_trajectory_sha256": "41ee23a5dc8272a339bbcd2f0ff0c559d916175e3b897d584bab8788dc3903a4",
+  "metadata_sha256": "3ef7df7382ef18c0317c067c3c59ebbb6de3c41ed31ee6ed3bde8c53934966a9"
+}

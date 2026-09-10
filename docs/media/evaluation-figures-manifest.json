@@ -1,0 +1,17 @@
+{
+  "summary": "/mnt2/zhexi/deskclean-real2sim/agent/out/formal-evaluation-figures/summary-v1.json",
+  "summary_sha256": "11f0604c4d5b83e2eb714b639ac632f289a79bc29bf0bde1f7f8da2294060864",
+  "script_sha256": {
+    "plot_formal_evaluation.py": "35e772cf89254bc25df6dd56b2f56fbcbc0dc0518c415c87d8d5d0aeaff84d94",
+    "plot_augmentation.py": "6e6348d8fc78c69ee8ee59363d9736c92e412642255eb56786c471d410b5412a"
+  },
+  "outputs_sha256": {
+    "evaluation-per-seed.png": "06cb0331bdbcc0ae461c4b3cf83841e969f4652c99b641e67d0c259034162934",
+    "evaluation-per-seed.svg": "75f887c1534a0f4f3b80ddbe2c083e89b09f79ac63bc746a479fde0ad352887d",
+    "evaluation-across-seeds.png": "596d926a2b6aa09b2049589e13a38d503ca50d5dab558b1d487e950bc1b2b514",
+    "evaluation-across-seeds.svg": "bf5bbd1687b55e6291e1c5f3022a8d016458ceec94f3506728e7c2c9ffc6a3f8",
+    "evaluation-paired.png": "a51d8f0346c56a89e7d6f130193e4810105b935bc55363d882908312148ef7f3",
+    "evaluation-paired.svg": "2c417d21af6ed61f3472fb91a4dee44673d6bff46d82f94085fd40594b6a07bc"
+  },
+  "report_role": "completed_formal_test_evaluation"
+}

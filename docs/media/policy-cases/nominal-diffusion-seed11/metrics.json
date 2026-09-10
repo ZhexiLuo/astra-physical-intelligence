@@ -1,0 +1,77 @@
+{
+  "duration": 8.999999999999675,
+  "logical_policy_hz": 20,
+  "max_penetration_m": {
+    "all": 0.0020800737775636697,
+    "block_dustpan": 0.0016081214285342171,
+    "robot_self": 0.0
+  },
+  "forbidden_collision_penetration_m": 0.0,
+  "interactions": {
+    "brush_block_contacts": 1098,
+    "brush_block_normal_impulse_ns": 2.159751311778584,
+    "dustpan_block_contacts": 16508,
+    "dustpan_block_normal_impulse_ns": 3.1351626293260364
+  },
+  "render_seconds_mean": 0.6983657161710342,
+  "render_seconds_p95": 0.8785928208380938,
+  "inference_seconds_mean": 0.008142165161876215,
+  "inference_seconds_p95": 0.06050287098623812,
+  "block_count": 6,
+  "blocks_in_dustpan": 5,
+  "blocks_local_positions": [
+    [
+      -0.12111854162128254,
+      -0.052483202501868796,
+      -0.007808183387900569
+    ],
+    [
+      -0.042003902278705825,
+      0.09062835313383223,
+      0.01542741243899721
+    ],
+    [
+      0.03013060177743688,
+      0.10071065705936653,
+      0.015748675845240052
+    ],
+    [
+      -0.07309312296926497,
+      0.056744157193981494,
+      0.01436021996167783
+    ],
+    [
+      -0.0072718861640403195,
+      0.09524130245152791,
+      0.015601533085266425
+    ],
+    [
+      0.060332042197545115,
+      0.09032065023569846,
+      0.01543465323422778
+    ]
+  ],
+  "warnings": {},
+  "success": false,
+  "task_success": false,
+  "physical_success": false,
+  "physical_checks": {
+    "no_warnings": true,
+    "pan_lifted": false,
+    "global_penetration": false,
+    "pan_penetration": false,
+    "robot_self_penetration": true,
+    "forbidden_collision": true
+  },
+  "final_pan_height_m": 0.019487786218496117,
+  "success_definition": "final six-block cavity inclusion; physical_success adds shared physical checks",
+  "sampling_seed": 2000,
+  "episode_wall_seconds": 135.32015013881028,
+  "simulation_seconds_per_wall_second": 0.0665089418742704,
+  "episode": "/mnt2/zhexi/deskclean-real2sim/agent/out/evaluation-scenes-v1/test_id/episode-000000",
+  "observation_mode": "live",
+  "scene_sha256": "e695577d658d4476c1c0a5a1c13a91a12f1b7c184c9e17069182197d14e28117",
+  "sensor_audit_sha256": "28617c17fa810644bf23e68084d41faaf18f52fc352e8a52da28d5a4fb964d97",
+  "initialization_trajectory_sha256": "41ee23a5dc8272a339bbcd2f0ff0c559d916175e3b897d584bab8788dc3903a4",
+  "metadata_sha256": "3ef7df7382ef18c0317c067c3c59ebbb6de3c41ed31ee6ed3bde8c53934966a9"
+}

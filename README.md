@@ -168,7 +168,7 @@ export BLENDER_SENSOR_SOCKET="$PWD/agent/out/sensors/main.sock"
 CUDA_VISIBLE_DEVICES=1 .venv-il/bin/python -m src.evaluate_policy \
   --checkpoint agent/out/imitation/train/augmented-act-seed11/checkpoints/050000/pretrained_model \
   --episodes-file agent/out/evaluation-scenes-v1/test_id/episodes.json \
-  --output agent/out/imitation/eval/augmented-act-seed11-test-id --steps 180
+  --output agent/out/imitation/eval/augmented-act-seed11-test-id --steps 180 --action-steps 16
 ```
 
 Evaluation saves predicted actions, all physical states and contacts, current
@@ -187,9 +187,10 @@ maximizes physical successes, then collection successes, with ties retaining fou
 actions. All candidate validation outcomes are retained; the selected window is
 frozen before evaluating the separate test domains.
 
-The planned protocol contains 960 validation rollouts and 3,480 test or
-image-intervention rollouts. Formal 50,000-update training is currently running;
-formal validation and test evaluation have not started. The forty validation
+All twelve formal runs completed 50,000 updates. All 960 validation rollouts and
+3,480 test or image-intervention rollouts are complete. Validation selected
+16 executed actions per prediction for ACT and 15 for Diffusion Policy. The
+evaluation command above uses the selected ACT setting. The forty validation
 scenes are reused across six models of each method;
 their 240 model-scene outcomes per candidate are not independent scene samples.
 Training curves, validation selection, and test generalization have separate
@@ -205,3 +206,9 @@ The generated task MJCF fixes the base and adds the table, tools, and free block
 Original model license and notices are retained in the archive.
 The site's pinned model-viewer bundle and its dependency licenses are preserved
 in `docs/vendor/`; those licenses apply to their upstream components.
+
+## Learning artifacts
+
+The [v0.2.0 release](https://github.com/ZhexiLuo/astra-physical-intelligence/releases/tag/v0.2.0) provides portable source, its continuation, teacher and Blender training data, twelve checkpoints, and a compact bundle of four fixed presentation cases. Start with `reproduce-learning-v2.zip`, then extract `reproduce-continuation-v1.zip` into the same parent directory and follow its instructions.
+
+The [English report](https://zhexiluo.github.io/astra-physical-intelligence/) includes all aggregate evaluation results, interactive scenes, and selected videos. Full per-rollout evaluation archives remain on the original server and are not part of the public release.
